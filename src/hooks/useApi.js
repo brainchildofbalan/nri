@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const useApi = () => {
     const api = axios.create({
-        baseURL: 'http://localhost:5000/v1',
+        baseURL: 'http://api.nrilife.com/v1',
         timeout: 8000,
         headers: {
             Accept: 'application/json',

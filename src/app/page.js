@@ -10,14 +10,17 @@ import WhyWill from '@components/widgets/whyWill/whyWill'
 export default async function Home() {
   const data = await useFetch(`/services-categories`);
   return (
-    <main>
-      <Banner />
-      <ServiceList {...data} />
-      <Intro />
-      <FeaturedServices {...data} />
-      <WhyWill />
-      <HappyCustomers />
-      <ConnectUs />
-    </main>
+    <>
+      <main>
+        <Banner />
+        <ServiceList {...data} />
+        <Intro />
+        <FeaturedServices {...data} />
+        <WhyWill />
+        <HappyCustomers />
+        <ConnectUs />
+      </main>
+    </>
+
   )
 }
