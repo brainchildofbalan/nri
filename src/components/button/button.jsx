@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const Button = ({
+  type = `button`,
   icon,
   text,
   onclick,
@@ -45,7 +46,8 @@ const Button = ({
     </Link>
   ) : (
     <button
-      onclick={onclick}
+      type={type}
+      onClick={onclick}
       className={`w-auto flex items-center justify-center border-none bg-[#09757A] text-white leading-none px-[18px] py-[12px] rounded-sm ${classNames} group  whitespace-pre`}
     >
       {text}

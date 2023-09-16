@@ -17,8 +17,18 @@ const Intro = () => {
           <div
             className={`w-full md:w-auto flex flex-col md:flex-row gap-[10px]`}
           >
-            <Button text={`View all services`} classNames={`!w-full`} />
-            <Button text={`Learn more`} classNames={`!bg-[#000000] !w-full`} />
+            <Button
+              as={`link`}
+              href={`/services`}
+              text={`View all services`}
+              classNames={`!w-full`}
+            />
+            <Button
+              as={`link`}
+              href={`/about-us`}
+              text={`Learn more`}
+              classNames={`!bg-[#000000] !w-full`}
+            />
           </div>
         </div>
       </div>

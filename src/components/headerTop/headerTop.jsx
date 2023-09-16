@@ -9,7 +9,7 @@ const HeaderTop = () => {
         <div className={`w-auto ml-auto mr-auto md:mr-0 flex items-center`}>
           <div className={`w-[18px] h-[18px] mr-[10px]`}>
             <img
-              src="images/header/headset.svg"
+              src="/images/header/headset.svg"
               alt=""
               className={`w-full h-auto`}
             />
@@ -28,21 +28,21 @@ const HeaderTop = () => {
             <li>
               <a href="tel:+917994298158">
                 <div className={`w-[18px] h-[18px] mr-[5px]`}>
-                  <img src="images/header/facebook.svg" alt="" />
+                  <img src="/images/header/facebook.svg" alt="" />
                 </div>
               </a>
             </li>
             <li>
               <a href="tel:+917994298158">
                 <div className={`w-[18px] h-[18px] mr-[5px]`}>
-                  <img src="images/header/instagram.svg" alt="" />
+                  <img src="/images/header/instagram.svg" alt="" />
                 </div>
               </a>
             </li>
             <li>
               <a href="tel:+917994298158">
                 <div className={`w-[18px] h-[18px] mr-[5px]`}>
-                  <img src="images/header/linkedin.svg" alt="" />
+                  <img src="/images/header/linkedin.svg" alt="" />
                 </div>
               </a>
             </li>

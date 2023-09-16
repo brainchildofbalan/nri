@@ -1,7 +1,16 @@
-import React from "react";
+import { useApi } from "@components/hooks/useApi";
 import MegamenuItem from "../megamenuItem/megamenuItem";
+import { useEffect, useState } from "react";
 
 const Megamenu = ({ isOpen, setMenuOpen }) => {
+  const { api } = useApi();
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    api.get(`/services-categories`).then((res) => {
+      setData(res.data);
+    });
+  }, []);
+
   return (
     <div
       className={`w-full absolute top-[100%] z-40 transition-all duration-300 ${
@@ -17,21 +26,14 @@ const Megamenu = ({ isOpen, setMenuOpen }) => {
           <div
             className={`bg-white py-[33px] px-[15px] w-full flex flex-wrap  shadow-md shadow-gray-100 border`}
           >
-            <div className={`w-1/5 [&>*]:last:border-none`}>
-              <MegamenuItem />
-            </div>
-            <div className={`w-1/5 [&>*]:last:border-none`}>
-              <MegamenuItem />
-            </div>
-            <div className={`w-1/5 [&>*]:last:border-none`}>
-              <MegamenuItem />
-            </div>
-            <div className={`w-1/5 [&>*]:last:border-none`}>
-              <MegamenuItem />
-            </div>
-            <div className={`w-1/5 [&>*]:last:border-none`}>
-              <MegamenuItem />
-            </div>
+            {data &&
+              data?.categorized?.map((item, index) => {
+                return (
+                  <div className={`w-1/5 [&>*]:last:border-none`} key={index}>
+                    <MegamenuItem {...item} />
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>

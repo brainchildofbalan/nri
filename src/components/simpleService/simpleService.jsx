@@ -1,11 +1,12 @@
 import React from "react";
 
-const SimpleService = ({ active, title }) => {
+const SimpleService = ({ active, title, ...props }) => {
   return (
     <button
       className={`rounded-[4px] overflow-hidden text-[17px] text-white h-[56px] px-[21px] flex justify-center items-center ${
         active ? `bg-[#09757A]` : ""
       }`}
+      {...props}
     >
       <span className={`whitespace-pre`}>{title}</span>
       <svg

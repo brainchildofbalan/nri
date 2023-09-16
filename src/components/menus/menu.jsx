@@ -1,8 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import Button from "../button/button";
+import { useRecoilValue } from "recoil";
+import { cartState } from "@components/hooks/state";
 
 const Menu = ({ setMenuOpen }) => {
+  const cartValues = useRecoilValue(cartState);
+
   return (
     <div
       className={`flex h-full text-black gap-[40px] items-center text-[18px]`}
@@ -28,8 +32,13 @@ const Menu = ({ setMenuOpen }) => {
           </Link>
         </li>
         <li className={`h-[67px] flex items-center`}>
-          <Link href={`/`}>
+          <Link href={`/services`}>
             <span>Price and package</span>
+          </Link>
+        </li>
+        <li className={`h-[67px] flex items-center`}>
+          <Link href={`/cart`}>
+            <span>cart</span>
           </Link>
         </li>
       </ul>
