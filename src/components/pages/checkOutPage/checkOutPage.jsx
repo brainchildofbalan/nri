@@ -4,8 +4,8 @@ import Checkout from "@components/components/checkout/checkout";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import React from "react";
 
-const CheckOutPage = ({ data }) => {
-  const { order_amount, order_amount_sub, tax_amount } = data[0];
+const CheckOutPage = ({ data = [{}] }) => {
+  const { order_amount, order_amount_sub, tax_amount } = data && data[0];
   return (
     <PayPalScriptProvider
       options={{ "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID }}

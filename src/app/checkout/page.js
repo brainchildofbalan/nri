@@ -1,7 +1,7 @@
 import CheckOutPage from "@components/components/pages/checkOutPage/checkOutPage"
 
 
-const checkout = async () => {
+const checkout = () => {
     return (
         <>
             <CheckOutPage />
