@@ -17,6 +17,7 @@ export const useCartDetails = () => {
     const { api } = useApi()
     const { formatDate } = useFormatDate()
     const [cart, setCart] = useRecoilState(cartState);
+
     console.log(cart);
     const validationSchema = Yup.object().shape({
         email_address: Yup.string().email('Invalid email address').required('Email is required'),
@@ -82,6 +83,13 @@ export const useCartDetails = () => {
     }, [cart]);
 
 
+    const clearCart = () => {
+        localStorage.removeItem('cartList')
+        setCartList([]);
+        router.push('/services');
+    }
+
+
 
     useEffect(() => {
 
@@ -138,6 +146,7 @@ export const useCartDetails = () => {
         cartLogin,
         setCartLogin,
         userData,
-        setUserData
+        setUserData,
+        clearCart
     }
 }

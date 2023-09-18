@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const useApi = () => {
     const api = axios.create({
-        baseURL: 'http://api.nrilife.com/v1',
+        baseURL: process.env.NEXT_PUBLIC_APP_URL_PRO_OPEN,
         timeout: 8000,
         headers: {
             Accept: 'application/json',

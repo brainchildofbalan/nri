@@ -3,7 +3,13 @@ import React from "react";
 import Button from "../button";
 import Link from "next/link";
 
-const ServiceDetailItem = ({ category_name, price, content }) => {
+const ServiceDetailItem = ({
+  category_name,
+  price,
+  content,
+  category_id,
+  handleBuyNow,
+}) => {
   return (
     <div className={`w-full relative flex flex-col`}>
       <div className={`w-full aspect-[419.9/70] relative`}>
@@ -37,7 +43,11 @@ const ServiceDetailItem = ({ category_name, price, content }) => {
           >
             ${price}
           </p>
-          <Button text={`Buy now`} classNames={`!bg-[#ED781A]`} />
+          <Button
+            text={`Buy now`}
+            classNames={`!bg-[#ED781A]`}
+            onclick={() => handleBuyNow({ category_name, price, category_id })}
+          />
         </div>
 
         <div className={`w-auto flex ml-auto`}>

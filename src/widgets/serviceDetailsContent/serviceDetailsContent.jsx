@@ -8,6 +8,8 @@ const ServiceDetailsContent = ({
   more_services,
   price,
   content,
+  han,
+  handleBuyNow,
 }) => {
   const filteredData = more_services.filter(
     (item) => item.category_id !== category_id
@@ -21,6 +23,8 @@ const ServiceDetailsContent = ({
               category_name={category_name}
               price={price}
               content={content}
+              category_id={category_id}
+              handleBuyNow={handleBuyNow}
             />
           </div>
           <div className={`w-1/3 p-[10px]`}>
