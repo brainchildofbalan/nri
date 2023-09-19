@@ -15,10 +15,10 @@ const ServiceDetailsContent = ({
     (item) => item.category_id !== category_id
   );
   return (
-    <div className={`w-full relative py-[20x] md:py-[50px]`}>
+    <div className={`w-full relative py-[20px] md:py-[50px]`}>
       <div className={`container mx-auto px-[15px]`}>
         <div className={`flex flex-wrap m-[-10px]`}>
-          <div className={`w-2/3   p-[10px]`}>
+          <div className={`w-full lg:w-2/3   p-[10px]`}>
             <ServiceDetailItem
               category_name={category_name}
               price={price}
@@ -27,10 +27,13 @@ const ServiceDetailsContent = ({
               handleBuyNow={handleBuyNow}
             />
           </div>
-          <div className={`w-1/3 p-[10px]`}>
+          <div className={`w-full lg:w-1/3 p-[10px] flex flex-wrap`}>
             {filteredData.map((item, index) => {
               return (
-                <div className={`w-full relative mb-[20px] `} key={index}>
+                <div
+                  className={`w-full md:w-1/2 lg:w-full relative lg:mb-[20px] p-[5px] `}
+                  key={index}
+                >
                   <ServiceCard {...item} />
                 </div>
               );

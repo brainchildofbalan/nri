@@ -5,21 +5,21 @@ import Link from "next/link";
 const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
   return (
     <section
-      className={`w-full relative min-h-[93px] mt-[107px] bg-[#F5F5F5] flex items-center`}
+      className={`w-full relative min-h-[70px] md:min-h-[93px] mt-[107px] bg-[#F5F5F5] flex items-center`}
     >
       <div className={`container mx-auto px-[15px]`}>
         <div className={`w-full relative flex flex-wrap`}>
-          <div className={`w-1/2 flex items-center`}>
+          <div className={`w-auto flex items-center`}>
             <p className={`w-full text-[18px] font-medium relative`}>
               {title || ""}
             </p>
           </div>
-          <div className={`w-1/2 flex `}>
+          <div className={`w-full flex flex-1`}>
             <div className={`w-auto flex ml-auto items-center`}>
               {price && (
                 <>
                   <p
-                    className={`mr-[8px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[48px] px-[20px] flex items-center justify-center`}
+                    className={`mr-[8px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[20px] flex items-center justify-center`}
                   >
                     ${price || ""}
                   </p>
@@ -33,7 +33,7 @@ const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
                 </>
               )}
 
-              <div className={`pl-[50px]`}>
+              {/* <div className={`pl-[50px]`}>
                 <Link href={`/`} className={`flex items-center`}>
                   <span className={`inline-block mr-[10px]`}>
                     Next Services
@@ -57,7 +57,7 @@ const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
                     </svg>
                   </div>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

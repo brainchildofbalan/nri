@@ -27,9 +27,12 @@ const Menu = ({ setMenuOpen }) => {
           onMouseLeave={() => setMenuOpen(false)}
           className={`h-[67px] flex items-center`}
         >
-          <Link href={`/`}>
+          <button className={`flex items-center gap-[15px]`}>
             <span>Services</span>
-          </Link>
+            <span
+              className={`h-0 w-0 border-x-4 border-x-transparent border-t-[5px] border-t-[#00494D]`}
+            ></span>
+          </button>
         </li>
         <li className={`h-[67px] flex items-center`}>
           <Link href={`/services`}>

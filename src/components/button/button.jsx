@@ -14,7 +14,7 @@ const Button = ({
   return as === `link` ? (
     <Link
       href={`${href || `/`}`}
-      className={`w-auto flex items-center justify-center border-none bg-[#09757A] text-white leading-none px-[18px] py-[12px] rounded-sm ${classNames} group whitespace-pre`}
+      className={`w-auto flex items-center justify-center border-none bg-[#09757A] text-white leading-none px-[12px] py-[8px] md:px-[18px] md:py-[12px] rounded-sm ${classNames} group whitespace-pre`}
     >
       {text}
       {icon && <span>{icon}</span>}
@@ -48,7 +48,7 @@ const Button = ({
     <button
       type={type}
       onClick={onclick}
-      className={`w-auto flex items-center justify-center border-none bg-[#09757A] text-white leading-none px-[18px] py-[12px] rounded-sm ${classNames} group  whitespace-pre`}
+      className={`w-auto flex items-center justify-center border-none bg-[#09757A] text-white leading-none px-[12px] py-[8px] md:px-[18px] md:py-[12px] rounded-sm ${classNames} group  whitespace-pre`}
     >
       {text}
       {icon && <span>{icon}</span>}

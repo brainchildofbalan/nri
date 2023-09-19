@@ -9,7 +9,6 @@ const Banner = () => {
       <Image
         src={`/images/banner/banner.jpg`}
         quality={99.8}
-        priority
         fill
         alt={`banner`}
         className="object-cover object-[70%]"
