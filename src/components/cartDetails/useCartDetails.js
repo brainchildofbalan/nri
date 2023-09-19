@@ -29,10 +29,10 @@ export const useCartDetails = () => {
 
     console.log(userData);
     const initialValues = {
-        email_address: userData.email_address || '',
-        user_name: userData.user_name || '',
-        date_of_birth: userData.date_of_birth || '',
-        number: userData.number || '',
+        email_address: userData?.email_address || '',
+        user_name: userData?.user_name || '',
+        date_of_birth: userData?.date_of_birth || '',
+        number: userData?.number || '',
     };
 
     const handleSubmitFrom = (values, errors) => {

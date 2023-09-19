@@ -42,7 +42,7 @@ const Menu = ({ setMenuOpen }) => {
           </Link>
         </li>
       </ul>
-      <Link href={`/`}>
+      <Link href={`/contact-us`}>
         <Button text={`Contact Us`} classNames={`text-[18px]`}>
           Contact Us
         </Button>
