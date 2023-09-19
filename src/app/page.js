@@ -8,7 +8,8 @@ import ServiceList from '@components/widgets/serviceList/serviceList'
 import WhyWill from '@components/widgets/whyWill/whyWill'
 
 export default async function Home() {
-  const data = await useFetch(`/services-categories`);
+  const options = { cache: "no-store" };
+  const data = await useFetch(`/services-categories`, options);
   return (
     <>
       <main>

@@ -7,7 +7,8 @@ import React from 'react'
 const services = async ({ params }) => {
     // const params = useParams();
     // // console.log(params.slug);
-    const data = await useFetch(`/service/${params.slug}`);
+    const options = { cache: "no-store" };
+    const data = await useFetch(`/service/${params.slug}`, options);
     return (
         <>
             <ServiceDetails data={data} />

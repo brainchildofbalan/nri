@@ -6,7 +6,8 @@ import { useParams } from 'next/navigation'
 
 const checkout = async () => {
     const params = useParams();
-    const data = await useFetch(`/order/${params.slug}`);
+    const options = { cache: "no-store" };
+    const data = await useFetch(`/order/${params.slug}`, options);
     console.log(data);
 
     return (

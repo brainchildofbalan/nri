@@ -7,7 +7,8 @@ import { useSearchParams } from "next/navigation";
 const success = async () => {
     const searchParams = useSearchParams();
     const search = searchParams.get("order");
-    const data = await useFetch(`/order/${search}`);
+    const options = { cache: "no-store" };
+    const data = await useFetch(`/order/${search}`, options);
 
 
     return (

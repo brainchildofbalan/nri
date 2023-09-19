@@ -2,7 +2,8 @@ import ServicesAndPackagesPage from "@components/components/pages/servicesAndPac
 import useFetch from "@components/hooks/useFetch";
 
 const services = async () => {
-    const data = await useFetch(`/services-categories`);
+    const options = { cache: "no-store" };
+    const data = await useFetch(`/services-categories`, options);
     return (
 
         <ServicesAndPackagesPage {...data} />
