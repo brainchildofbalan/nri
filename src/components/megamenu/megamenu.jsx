@@ -30,7 +30,7 @@ const Megamenu = ({ isOpen, setMenuOpen }) => {
               data?.categorized?.map((item, index) => {
                 return (
                   <div className={`w-1/5 [&>*]:last:border-none`} key={index}>
-                    <MegamenuItem {...item} />
+                    <MegamenuItem {...item} setMenuOpen={setMenuOpen} />
                   </div>
                 );
               })}
