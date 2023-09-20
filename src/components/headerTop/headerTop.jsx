@@ -3,7 +3,7 @@ import React from "react";
 const HeaderTop = () => {
   return (
     <div
-      className={`w-full bg-[#00494D] h-[40px] flex items-center  text-[16] text-white`}
+      className={`w-full bg-[#0C999F] h-[50px] flex items-center  text-[16] text-white`}
     >
       <div className={`container px-[15px] mx-auto flex items-center`}>
         <div className={`w-auto ml-auto mr-auto md:mr-0 flex items-center`}>
@@ -14,9 +14,9 @@ const HeaderTop = () => {
               className={`w-full h-auto`}
             />
           </div>
-          <div className={`w-auto flex items-center`}>
+          <div className={`w-auto flex items-center text-[18px]`}>
             <a href="tel:+917994298158">+917994298158</a>
-            <span className={`w-[1px] inline-block mx-[8px]`}>|</span>
+            <span className={`w-[1px] inline-block ml-[8px] mr-[12px]`}>|</span>
             <a href="mailto:info@nrilife.com">info@nrilife.com</a>
           </div>
         </div>

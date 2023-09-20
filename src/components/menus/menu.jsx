@@ -12,12 +12,12 @@ const Menu = ({ setMenuOpen }) => {
       className={`flex h-full text-black gap-[40px] items-center text-[18px]`}
     >
       <ul className={`flex gap-[40px] items-center `}>
-        <li className={`h-[67px] flex items-center`}>
+        <li className={`h-[67px] flex items-center font-medium`}>
           <Link href={`/`}>
             <span>Home</span>
           </Link>
         </li>
-        <li className={`h-[67px] flex items-center`}>
+        <li className={`h-[67px] flex items-center font-medium`}>
           <Link href={`/`}>
             <span>About Us</span>
           </Link>
@@ -25,21 +25,21 @@ const Menu = ({ setMenuOpen }) => {
         <li
           onMouseEnter={() => setMenuOpen(true)}
           onMouseLeave={() => setMenuOpen(false)}
-          className={`h-[67px] flex items-center`}
+          className={`h-[67px] flex items-center font-medium`}
         >
-          <button className={`flex items-center gap-[15px]`}>
+          <button className={`flex items-center gap-[8px]`}>
             <span>Services</span>
             <span
-              className={`h-0 w-0 border-x-4 border-x-transparent border-t-[5px] border-t-[#00494D]`}
+              className={`h-0 w-0 border-x-4 border-x-transparent border-t-[5px] border-t-[#0eabb1]`}
             ></span>
           </button>
         </li>
-        <li className={`h-[67px] flex items-center`}>
+        <li className={`h-[67px] flex items-center font-medium`}>
           <Link href={`/services`}>
             <span>Price and package</span>
           </Link>
         </li>
-        <li className={`h-[67px] flex items-center`}>
+        <li className={`h-[67px] flex items-center font-medium`}>
           <Link href={`/cart`}>
             <span>cart</span>
           </Link>

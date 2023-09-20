@@ -31,10 +31,10 @@ const ServiceDetailsContent = ({
             {filteredData.map((item, index) => {
               return (
                 <div
-                  className={`w-full md:w-1/2 lg:w-full relative lg:mb-[20px] p-[5px] `}
+                  className={`w-full sm:w-1/2 lg:w-full relative lg:mb-[20px] p-[5px] lg:p-[0] `}
                   key={index}
                 >
-                  <ServiceCard {...item} />
+                  <ServiceCard {...item} isBgGrey />
                 </div>
               );
             })}

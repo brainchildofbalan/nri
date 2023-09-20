@@ -5,7 +5,7 @@ import React from "react";
 
 const WhyWill = () => {
   return (
-    <section className={`w-full relative bg-[#065056] text-white`}>
+    <section className={`w-full relative bg-[#0B888D] text-white`}>
       <div className={`container px-[15px] mx-auto relative  py-[50px]`}>
         <span
           className={`hidden lg:block w-[260px] h-full bg-white absolute left-[-4%] top-0`}

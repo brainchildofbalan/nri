@@ -8,7 +8,7 @@ const ServiceCardSmall = ({ title, href }) => {
       className={`w-full relative bg-[#F5F5F5] p-[18px] h-full flex flex-col rounded-[4px] overflow-hidden hover:shadow-md shadow-[#09757A] transition-all duration-300 hover:translate-y-[-5px]`}
     >
       <h4
-        className={`text-[18px] lg:text-[20px] 2xl:text-[22px] leading-[1.4] text-[#09757A] mb-[30px] max-w-[80%]`}
+        className={`text-[18px] lg:text-[20px] 2xl:text-[24px] leading-[1.4] text-[#09757A] mb-[30px] max-w-[80%]`}
       >
         {title}
       </h4>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#333333]  text-white pt-[40px]">
+    <footer className="bg-[#054446]  text-white pt-[40px] border-t-4 border-[#03282A] ">
       <div className={`container px-[15px] mx-auto  pb-[50px]`}>
         <div className={`w-full flex flex-col justify-center items-center`}>
           <div className={`w-auto flex flex-col mb-[40px]`}>
@@ -154,12 +154,14 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`py-[15px] w-full min-h-[85px] flex items-center bg-[#000000] text-white overflow-hidden`}
+        className={`py-[15px] w-full min-h-[85px] flex items-center bg-[#03282A] text-white overflow-hidden`}
       >
         <div
           className={`container px-[15px] mx-auto flex flex-col-reverse md:flex-row`}
         >
-          <div className={`w-full relative flex justify-between`}>
+          <div
+            className={`w-full sm:w-auto sm:mr-auto relative flex justify-between`}
+          >
             <p
               className={`w-full text-center md:text-left mt-[15px] md:mt-0 text-[14px]`}
             >

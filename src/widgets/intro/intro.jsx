@@ -27,7 +27,7 @@ const Intro = () => {
               as={`link`}
               href={`/about-us`}
               text={`Learn more`}
-              classNames={`!bg-[#000000] !w-full`}
+              classNames={`!bg-[#00494D] !w-full`}
             />
           </div>
         </div>

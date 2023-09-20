@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Megamenu = ({ isOpen, setMenuOpen }) => {
   const { api } = useApi();
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(false);
   useEffect(() => {
     api.get(`/services-categories`).then((res) => {
       setData(res.data);
@@ -26,14 +26,17 @@ const Megamenu = ({ isOpen, setMenuOpen }) => {
           <div
             className={`bg-white py-[33px] px-[15px] w-full flex flex-wrap  shadow-md shadow-gray-100 border`}
           >
-            {data &&
+            {data ? (
               data?.categorized?.map((item, index) => {
                 return (
                   <div className={`w-1/5 [&>*]:last:border-none`} key={index}>
                     <MegamenuItem {...item} setMenuOpen={setMenuOpen} />
                   </div>
                 );
-              })}
+              })
+            ) : (
+              <div className="w-full text-center">Loading...</div>
+            )}
           </div>
         </div>
       </div>

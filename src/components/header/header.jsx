@@ -9,10 +9,15 @@ import SideMenu from "../sideMenu/sideMenu";
 import Image from "next/image";
 
 const Header = () => {
-  const { menuOpen, setMenuOpen, setSideMenuOpen, sideMenuOpen } = useHeader();
+  const { menuOpen, setMenuOpen, setSideMenuOpen, sideMenuOpen, isHeaderHide } =
+    useHeader();
   return (
     <>
-      <header className={`bg-white fixed w-full left-0 top-0 z-50`}>
+      <header
+        className={`bg-white fixed w-full left-0 top-0 z-50 border-b shadow-sm ${
+          isHeaderHide ? `translate-y-[-50px]` : `translate-y-[0px]`
+        } transition-transform duration-300`}
+      >
         <div className={`w-full`}>
           <HeaderTop />
         </div>

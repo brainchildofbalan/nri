@@ -11,53 +11,70 @@ const ServiceDetailItem = ({
   handleBuyNow,
 }) => {
   return (
-    <div className={`w-full relative flex flex-col`}>
+    <div className={`w-full relative flex flex-col lg:pr-[30px]`}>
       <div className={`w-full aspect-[419.9/70] relative`}>
         <Image
           src={`/images/banner/banner.jpg`}
           quality={99.8}
-          priority
           fill
           alt={`banner`}
           className="object-cover object-[70%]"
         />
       </div>
-      <div className={`w-full flex justify-between mt-[20px] items-center`}>
+      <div
+        className={`w-full flex flex-col md:flex-row justify-between mt-[30px] items-center`}
+      >
         <h2
-          className={`w-auto flex flex-1 text-[36px] leading-[1.4] mb-0 font-medium`}
+          className={`w-full md:w-auto flex flex-1 text-[25px]  lg:text-[30px] xl:text-[36px] leading-[1.4] mb-0 font-medium`}
         >
           {category_name}
         </h2>
-        <p>
-          Estimated time for completion: <b>1 week</b>
+        <p className="w-full md:w-auto text-[14px] sm:text-[16px]">
+          <span className={`opacity-40`}>Estimated time for completion:</span>{" "}
+          <b>1 Week</b>
         </p>
       </div>
-      <div className={`w-full relative mt-[10px]`}>
+      <div className={`w-full relative mt-[10px] text-[18px] leading-[1.7]`}>
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
-      <div className={`w-full relative flex mt-[40px]`}>
-        <div className={`w-auto flex items-center`}>
-          <p className={`pr-[10px]`}>Price</p>
+      <div
+        className={`w-full relative flex flex-wrap md:flex-nowrap pt-[30px] mt-[20px] border-t`}
+      >
+        <div className={`w-full sm:w-auto flex items-center`}>
+          <p className={`pr-[10px] hidden md:flex`}>Price</p>
           <p
-            className={`mr-[20px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[48px] px-[20px] flex items-center justify-center`}
+            className={`mr-[10px] md:mr-[15px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[40px] flex items-center justify-center font-bold text-[20px]`}
           >
             ${price}
           </p>
           <Button
             text={`Buy now`}
-            classNames={`!bg-[#ED781A]`}
+            classNames={`!bg-[#ED781A] !w-full !md:w-auto`}
             onclick={() => handleBuyNow({ category_name, price, category_id })}
           />
         </div>
 
-        <div className={`w-auto flex ml-auto`}>
-          <Link
-            href={`/`}
-            className={`mr-[20px] border bg-[#25D366] text-white rounded-[3px] overflow-hidden h-[48px] px-[20px] flex items-center justify-center`}
+        <div
+          className={`w-full sm:w-auto flex ml-auto items-center mt-2 sm:mt-0`}
+        >
+          <a
+            href={`https://wa.me/+919645550072 ?text=I'm%20interested%20in%20your%20service`}
+            className={`w-full lg:mr-[15px] border bg-[#25D366] hover:bg-[#1d9b41] text-white rounded-[3px] overflow-hidden h-[42px] md:h-[48px] px-[20px] flex items-center justify-center transition-all duration-300 border-[#25D366]`}
           >
+            <span>
+              <Image
+                src={`/whatsapp.svg`}
+                width={20}
+                height={20}
+                alt="this is a whatsapp button"
+                className="mr-[10px]"
+              />
+            </span>
             Whatsapp now
-          </Link>
-          <Button text={`Contact us`} as={`link`} href={`/`} />
+          </a>
+          <div className={`w-auto hidden lg:flex`}>
+            <Button text={`Contact us`} as={`link`} href={`/contact-us`} />
+          </div>
         </div>
       </div>
     </div>

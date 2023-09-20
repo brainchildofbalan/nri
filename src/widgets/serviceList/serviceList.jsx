@@ -5,10 +5,15 @@ import React from "react";
 import { useServiceList } from "./useServiceList";
 
 const ServiceList = ({ categorized }) => {
-  const { openServiceList, setOpenServiceList, handleChangeList, activeList } =
-    useServiceList({
-      categorized,
-    });
+  const {
+    openServiceList,
+    setOpenServiceList,
+    handleChangeList,
+    activeList,
+    activeId,
+  } = useServiceList({
+    categorized,
+  });
   return (
     <>
       {openServiceList && (
@@ -29,14 +34,15 @@ const ServiceList = ({ categorized }) => {
             >
               <div className={` flex overflow-x-auto mx-auto relative`}>
                 <div className={`w-auto relative mx-auto`}>
-                  <ul className={`bg-[#09757A] bg-opacity-80 flex `}>
+                  <ul className={`bg-[#0eabb1] bg-opacity-80 flex `}>
                     {categorized &&
                       categorized.map((item, index) => {
                         return (
                           <li key={index}>
                             <SimpleService
+                              active={activeId === item.category_id}
                               title={item.category_name}
-                              onClick={() => {
+                              onMouseEnter={() => {
                                 handleChangeList(item.category_id);
                               }}
                             />
@@ -55,7 +61,7 @@ const ServiceList = ({ categorized }) => {
                           <li className={`m-[3px] md:m-[6px]`} key={index}>
                             <Link
                               href={`/services/${item.url}`}
-                              className={`border border-[#000] px-[17px] md:px-[24px] text-[14px] py-[8px] whitespace-pre rounded-[4px] flex hover:bg-white hover:text-black transition-all duration-300 `}
+                              className={`text-[18px] border border-[#000] px-[17px] md:px-[24px] text-[14px] py-[8px] whitespace-pre rounded-[4px] flex hover:bg-[#09757A] hover:border-[#09757A] hover:text-white transition-all duration-300 `}
                             >
                               {item.category_name}
                             </Link>
@@ -64,7 +70,7 @@ const ServiceList = ({ categorized }) => {
                       })
                     ) : (
                       <li className={`text-center w-full`}>
-                        Opps! no service under this category
+                        Oops! no service under this category
                       </li>
                     )}
                   </ul>

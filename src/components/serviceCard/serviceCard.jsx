@@ -5,7 +5,14 @@ import React from "react";
 import Button from "../button/button";
 import { userServiceCard } from "./userServiceCard";
 
-const ServiceCard = ({ category_name, content, price, url, category_id }) => {
+const ServiceCard = ({
+  category_name,
+  content,
+  price,
+  url,
+  category_id,
+  isBgGrey,
+}) => {
   const { handleAddCart } = userServiceCard();
   return (
     <div className={`w-full relative flex flex-col h-full`}>
@@ -23,7 +30,9 @@ const ServiceCard = ({ category_name, content, price, url, category_id }) => {
         />
       </Link>
       <div
-        className={`w-full relative border border-t-0 p-[20px] flex-1 flex flex-col`}
+        className={`w-full relative ${
+          !isBgGrey ? `border` : `bg-[#F5F5F5] bg-opacity-50 border-b`
+        } border-t-0 p-[20px] flex-1 flex flex-col`}
       >
         <Link href={`/services/${url}`} className={`w-full`}>
           <h3 className={`text-[20px] mb-[10px] font-semibold`}>
@@ -31,7 +40,7 @@ const ServiceCard = ({ category_name, content, price, url, category_id }) => {
           </h3>
           {content && (
             <div
-              className={`mb-[15px] text-[16px] leading-[1.4]`}
+              className={`mb-[15px] text-[16px] leading-[1.4] line-clamp-3`}
               dangerouslySetInnerHTML={{ __html: content }}
             />
           )}

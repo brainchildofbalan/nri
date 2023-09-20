@@ -5,21 +5,28 @@ import Link from "next/link";
 const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
   return (
     <section
-      className={`w-full relative min-h-[70px] md:min-h-[93px] mt-[107px] bg-[#F5F5F5] flex items-center`}
+      className={`w-full relative min-h-[70px] md:min-h-[93px] mt-[118px] bg-[#F5F5F5] flex items-center border-b`}
     >
       <div className={`container mx-auto px-[15px]`}>
         <div className={`w-full relative flex flex-wrap`}>
           <div className={`w-auto flex items-center`}>
+            <Link
+              href={`/`}
+              className="text-[18px] hover:opacity-100 opacity-40 transition-all duration-300"
+            >
+              Home
+            </Link>{" "}
+            <span className={`flex mx-[4px]`}>/</span>
             <p className={`w-full text-[18px] font-medium relative`}>
               {title || ""}
             </p>
           </div>
-          <div className={`w-full flex flex-1`}>
+          <div className={`w-full  flex-1 hidden md:flex`}>
             <div className={`w-auto flex ml-auto items-center`}>
               {price && (
                 <>
                   <p
-                    className={`mr-[8px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[20px] flex items-center justify-center`}
+                    className={`mr-[8px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[20px] flex items-center justify-center font-bold text-[20px]`}
                   >
                     ${price || ""}
                   </p>
