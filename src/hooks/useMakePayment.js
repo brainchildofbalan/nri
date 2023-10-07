@@ -7,7 +7,7 @@ import { useApi } from './useApi';
 export const useMakePayment = () => {
     const router = useRouter();
     const { api } = useApi()
-    const makePayment = async ({ productId = null, invoice_id }) => {
+    const makePayment = async ({ productId = null, invoice_id, clearCart }) => {
         // Make API call to the serverless API
 
 
@@ -37,6 +37,9 @@ export const useMakePayment = () => {
                     .then(function (response) {
 
                         router.push(`/success?order=${invoice_id}`);
+                        if (clearCart) {
+                            clearCart()
+                        }
                     })
                     .catch(function (error) {
                         console.log(error);

@@ -28,7 +28,7 @@ const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
                   <p
                     className={`mr-[8px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[20px] flex items-center justify-center font-bold text-[20px]`}
                   >
-                    ${price || ""}
+                    ₹{price || ""}
                   </p>
                   <Button
                     text={`Buy now`}

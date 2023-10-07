@@ -283,7 +283,7 @@ const CartDetails = () => {
                               >
                                 <div className={`w-1/2`}>Sub total Price</div>
                                 <div className={`w-1/2 font-medium`}>
-                                  ${totalAmountSub}
+                                  ₹{totalAmountSub}
                                 </div>
                               </div>
                               <div
@@ -291,14 +291,14 @@ const CartDetails = () => {
                               >
                                 <div className={`w-1/2`}>Tax (8%)</div>
                                 <div className={`w-1/2 font-medium`}>
-                                  ${taxPercentage}
+                                  ₹{taxPercentage}
                                 </div>
                               </div>
 
                               <div className={`w-full flex flex-wrap `}>
                                 <div className={`w-1/2 font-medium`}>Total</div>
                                 <div className={`w-1/2 font-medium`}>
-                                  ${totalAmount}
+                                  ₹{totalAmount}
                                 </div>
                               </div>
                             </div>

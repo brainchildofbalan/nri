@@ -44,18 +44,18 @@ const SuccessPage = ({ data }) => {
                 className={`w-full flex flex-wrap pb-[15px] mb-[15px] border-b`}
               >
                 <div className={`w-1/2`}>Sub total Price</div>
-                <div className={`w-1/2 font-medium`}>${order_amount_sub}</div>
+                <div className={`w-1/2 font-medium`}>₹{order_amount_sub}</div>
               </div>
               <div
                 className={`w-full flex flex-wrap pb-[15px] mb-[15px] border-b`}
               >
                 <div className={`w-1/2`}>Tax (8%)</div>
-                <div className={`w-1/2 font-medium`}>${tax_amount}</div>
+                <div className={`w-1/2 font-medium`}>₹{tax_amount}</div>
               </div>
 
               <div className={`w-full flex flex-wrap `}>
                 <div className={`w-1/2 font-medium`}>Total</div>
-                <div className={`w-1/2 font-medium`}>${order_amount}</div>
+                <div className={`w-1/2 font-medium`}>₹{order_amount}</div>
               </div>
             </div>
           </div>

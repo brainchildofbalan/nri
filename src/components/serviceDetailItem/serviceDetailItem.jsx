@@ -45,7 +45,7 @@ const ServiceDetailItem = ({
           <p
             className={`mr-[10px] md:mr-[15px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[40px] flex items-center justify-center font-bold text-[20px]`}
           >
-            ${price}
+            ₹{price}
           </p>
           <Button
             text={`Buy now`}

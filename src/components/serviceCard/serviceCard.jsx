@@ -47,7 +47,7 @@ const ServiceCard = ({
         </Link>
 
         <div className={`w-full flex flex-col justify-center mt-auto`}>
-          <h4 className={`text-[20px] mb-[10px] font-semibold`}>${price}</h4>
+          <h4 className={`text-[20px] mb-[10px] font-semibold`}>₹{price}</h4>
           <div className={`w-full flex justify-between items-center`}>
             <Link
               href={`/services/${url}`}
