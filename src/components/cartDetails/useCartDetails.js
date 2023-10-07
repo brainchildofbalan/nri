@@ -56,7 +56,7 @@ export const useCartDetails = () => {
             .then(function (response) {
                 if (response?.data?.insertedId) {
                     makePayment({ productId: "example_ebook", invoice_id: response?.data?.insertedId })
-                    // router.push(`/checkout/${response?.data?.insertedId}`);
+                    clearCartSuccess()
                 }
                 else {
                     console.log(`error`);
@@ -91,7 +91,15 @@ export const useCartDetails = () => {
     const clearCart = () => {
         localStorage.removeItem('cartList')
         setCartList([]);
+        setCart([])
         router.push('/services');
+    }
+
+
+    const clearCartSuccess = () => {
+        localStorage.removeItem('cartList')
+        setCartList([]);
+        setCart([])
     }
 
 
