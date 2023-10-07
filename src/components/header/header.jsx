@@ -26,7 +26,7 @@ const Header = () => {
         >
           <div className={`w-full relative flex items-center`}>
             <div className={`w-auto`}>
-              {/* <Link href={`/`}>
+              <Link href={`/`} className={`xl:hidden`}>
                 <Image
                   src="/images/header/logo.svg"
                   alt="nri's life logo"
@@ -34,7 +34,7 @@ const Header = () => {
                   width={`150`}
                   height={`38`}
                 />
-              </Link> */}
+              </Link>
             </div>
 
             <div className={`w-auto ml-auto hidden lg:flex`}>
@@ -58,7 +58,7 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`w-full absolute left-0 bottom-0 h-full flex items-center pointer-events-none`}
+          className={`hidden xl:flex w-full absolute left-0 bottom-0 h-full flex items-center pointer-events-none`}
         >
           <div className="relative container  mx-auto px-[15px] h-full before:absolute before:bg-white before:w-full before:left-[-90%] before:h-full">
             <div

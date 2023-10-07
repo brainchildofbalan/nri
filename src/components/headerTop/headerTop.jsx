@@ -14,7 +14,9 @@ const HeaderTop = () => {
               className={`w-full h-auto`}
             />
           </div>
-          <div className={`w-auto flex items-center text-[18px]`}>
+          <div
+            className={`w-auto flex items-center text-[15px] md:text-[18px]`}
+          >
             <a href="tel:+9645550072">+9645550072</a>,
             <a href="tel:+9645550073">73</a>,<a href="tel:+9645550074">74</a>
             <span className={`w-[1px] inline-block ml-[8px] mr-[12px]`}>|</span>
