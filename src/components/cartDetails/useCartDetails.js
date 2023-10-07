@@ -55,7 +55,7 @@ export const useCartDetails = () => {
             })
             .then(function (response) {
                 if (response?.data?.insertedId) {
-                    makePayment({ productId: "example_ebook", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess })
+                    makePayment({ productId: "nri_cart", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess, total: totalAmount })
 
                 }
                 else {

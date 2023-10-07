@@ -65,8 +65,8 @@ const Header = () => {
               className={`w-[280px]  h-full bg-white flex items-end z-10 relative`}
             >
               <div
-                className={`w-full ${
-                  isHeaderHide ? `h-[67px] w-[150px]` : `h-full w-[230px]`
+                className={`${
+                  isHeaderHide ? `h-[67px] !w-[150px]` : `h-full w-[230px]`
                 } transition-all duration-300 ease-in-out flex justify-end`}
               >
                 <Link

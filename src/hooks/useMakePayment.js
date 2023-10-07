@@ -7,14 +7,24 @@ import { useApi } from './useApi';
 export const useMakePayment = () => {
     const router = useRouter();
     const { api } = useApi()
-    const makePayment = async ({ productId = null, invoice_id, clearCart }) => {
+    const makePayment = async ({ productId = null, invoice_id, clearCart, total }) => {
         // Make API call to the serverless API
 
 
 
         const data = await useFetch(`/pay-now`, {
             method: "POST",
-            body: JSON.stringify({ productId: 123 }),
+            mode: "cors", // no-cors, *cors, same-origin
+            cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: "same-origin", // include, *same-origin, omit
+            headers: {
+                "Content-Type": "application/json",
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: "follow", // manual, *follow, error
+            referrerPolicy: "no-referrer",
+            body: JSON.stringify({ productId: 123, total: total }),
+
         })
 
 

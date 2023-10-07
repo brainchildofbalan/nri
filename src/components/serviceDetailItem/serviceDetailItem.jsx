@@ -34,7 +34,9 @@ const ServiceDetailItem = ({
           <b>1 Week</b>
         </p>
       </div>
-      <div className={`w-full relative mt-[10px] text-[18px] leading-[1.7]`}>
+      <div
+        className={`w-full relative mt-[10px] text-[18px] leading-[1.7] [&>*>ul]:list-disc [&>*>ul]:pl-[40px] [&>*>ul>li]:mb-[12px] [&>*>ul>li]:relative [&>*::after]:bg-black]`}
+      >
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
       <div
