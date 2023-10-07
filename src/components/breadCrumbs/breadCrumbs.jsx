@@ -46,7 +46,7 @@ const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
                     Next Services
                   </span>
                   <div
-                    className={`w-[37px] h-[37px] rounded-full bg-[#09757A] flex justify-center items-center`}
+                    className={`w-[37px] h-[37px] rounded-full bg-[#ED781A] flex justify-center items-center`}
                   >
                     <svg
                       width="8"

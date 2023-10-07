@@ -6,6 +6,7 @@ import { useCartDetails } from "./useCartDetails";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import CartLogin from "../cartLogin/cartLogin";
 import Checkout from "../checkout/checkout";
+import Script from "next/script";
 
 const CartDetails = () => {
   const {
@@ -20,10 +21,16 @@ const CartDetails = () => {
     cartLogin,
     setCartLogin,
     clearCart,
+    makePayment,
   } = useCartDetails();
 
   return (
     <>
+      <Script
+        id="razorpay-checkout-js"
+        src="https://checkout.razorpay.com/v1/checkout.js"
+      />
+
       {cartList && (
         <>
           {cartList.length !== 0 ? (
@@ -133,6 +140,12 @@ const CartDetails = () => {
                                     className={`w-full flex flex-wrap relative`}
                                   >
                                     <div className={`w-full md:w-1/2 p-[10px]`}>
+                                      <label
+                                        htmlFor=""
+                                        className={`mb-[10px] flex opacity-50`}
+                                      >
+                                        User name
+                                      </label>
                                       <input
                                         onChange={handleChange}
                                         onBlur={handleBlur}
@@ -149,13 +162,19 @@ const CartDetails = () => {
                                       />
                                     </div>
                                     <div className={`w-full md:w-1/2 p-[10px]`}>
+                                      <label
+                                        htmlFor=""
+                                        className={`mb-[10px] flex opacity-50`}
+                                      >
+                                        Email address
+                                      </label>
                                       <input
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         type="email"
                                         name="email_address"
                                         value={values.email_address}
-                                        placeholder="Enter name"
+                                        placeholder="Enter email address"
                                         className={`w-full border-b border-[#C7C7C7] h-[55px] p-[18px] placeholder:text-black text-[18px] focus-visible:outline-none focus-visible:shadow-none focus:border-[#000000]`}
                                       />
                                       <ErrorMessage
@@ -165,13 +184,19 @@ const CartDetails = () => {
                                       />
                                     </div>
                                     <div className={`w-full md:w-1/2 p-[10px]`}>
+                                      <label
+                                        htmlFor=""
+                                        className={`mb-[10px] flex opacity-50`}
+                                      >
+                                        Mobile number
+                                      </label>
                                       <input
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         type="number"
                                         name="number"
                                         value={values.number}
-                                        placeholder="Enter name"
+                                        placeholder="Enter mobile number"
                                         className={`w-full border-b border-[#C7C7C7] h-[55px] p-[18px] placeholder:text-black text-[18px] focus-visible:outline-none focus-visible:shadow-none focus:border-[#000000]`}
                                       />
                                       <ErrorMessage
@@ -181,6 +206,12 @@ const CartDetails = () => {
                                       />
                                     </div>
                                     <div className={`w-full md:w-1/2 p-[10px]`}>
+                                      <label
+                                        htmlFor=""
+                                        className={`mb-[10px] flex opacity-50`}
+                                      >
+                                        Date of birth
+                                      </label>
                                       <input
                                         onChange={handleChange}
                                         onBlur={handleBlur}
@@ -192,6 +223,30 @@ const CartDetails = () => {
                                       />
                                       <ErrorMessage
                                         name="date_of_birth"
+                                        component="div"
+                                        className="w-full text-red-600 text-[14px]"
+                                      />
+                                    </div>
+
+                                    <div className={`w-full p-[10px]`}>
+                                      <label
+                                        htmlFor=""
+                                        className={`mb-[10px] flex opacity-50`}
+                                      >
+                                        address
+                                      </label>
+                                      <textarea
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        rows={5}
+                                        type="date"
+                                        name="address"
+                                        value={values.address}
+                                        placeholder="Enter address"
+                                        className={`w-full border-b border-[#C7C7C7] h-[90px] p-[18px] placeholder:text-black text-[18px] focus-visible:outline-none focus-visible:shadow-none focus:border-[#000000]`}
+                                      />
+                                      <ErrorMessage
+                                        name="address"
                                         component="div"
                                         className="w-full text-red-600 text-[14px]"
                                       />

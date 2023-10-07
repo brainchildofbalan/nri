@@ -6,7 +6,7 @@ import "swiper/css";
 import ClientFeedback from "@components/components/clientFeedback/clientFeedback";
 const HappyCustomers = () => {
   return (
-    <section className={`w-full relative py-[50px]`}>
+    <section className={`w-full relative py-[40px]`}>
       <div className={`container px-[15px] mx-auto`}>
         <div className={`w-full flex justify-center mb-[35px]`}>
           <Title title={`Happy customers`} />

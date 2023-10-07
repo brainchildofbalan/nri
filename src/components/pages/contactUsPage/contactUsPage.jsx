@@ -5,7 +5,7 @@ const ContactUsPage = () => {
   return (
     <div className={`w-full min-h-[100vh]`}>
       <BreadCrumbs title={`contact us`} />
-      <div className={`w-full relative py-[50px]`}>
+      <div className={`w-full relative py-[40px]`}>
         <div className={`container mx-auto px-[15px]`}>
           <div className={`relative flex flex-wrap`}>
             <div
@@ -91,11 +91,13 @@ const ContactUsPage = () => {
                         alt=""
                       />
                     </div>
-                    <p>Kochi , Kerala, India</p>
+                    <p className={`text-center w-[90%] mx-auto`}>
+                      Planet Tower , Thmaspuram Church Road ,Marad ,Kochi 682304
+                    </p>
                   </a>
                 </div>
                 <div className={`w-1/3 flex flex-col items-center`}>
-                  <a href="/" className={`flex py-[30px] flex-col`}>
+                  <div className={`flex py-[30px] flex-col`}>
                     <div
                       className={`w-[22px] h-[22px] invert mx-auto mb-[20px]`}
                     >
@@ -105,8 +107,13 @@ const ContactUsPage = () => {
                         alt=""
                       />
                     </div>
-                    <p>+917994298158</p>
-                  </a>
+                    <span>
+                      {" "}
+                      <a href="tel:+9645550072">+9645550072</a>,{" "}
+                      <a href="tel:+9645550072">73</a>,{" "}
+                      <a href="tel:+9645550072">74</a>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

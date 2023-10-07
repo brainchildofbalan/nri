@@ -5,7 +5,7 @@ import React from "react";
 
 const FeaturedServices = ({ featured }) => {
   return (
-    <div className={`w-full flex flex-col pt-[50px] pb-[50px] overflow-hidden`}>
+    <div className={`w-full flex flex-col pt-[20px] pb-[40px] overflow-hidden`}>
       <div className={`container px-[15px] mx-auto`}>
         <div className={`w-full relative mb-[15px]`}>
           <Title title={`Our best services`} />

@@ -3,7 +3,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className={`w-full relative pt-[50px]`}>
+    <div className={`w-full relative pt-[30px]`}>
       <div className={`container px-[15px] mx-auto`}>
         <div className={`flex justify-center flex-col items-center`}>
           <h1 className={`text-[24px] md:text-[30px] leading-none mb-[15px]`}>
@@ -27,7 +27,7 @@ const Intro = () => {
               as={`link`}
               href={`/about-us`}
               text={`Learn more`}
-              classNames={`!bg-[#00494D] !w-full`}
+              classNames={`!bg-[#ED781A] !w-full`}
             />
           </div>
         </div>

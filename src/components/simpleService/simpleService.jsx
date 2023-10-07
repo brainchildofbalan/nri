@@ -3,7 +3,7 @@ import React from "react";
 const SimpleService = ({ active, title, ...props }) => {
   return (
     <button
-      className={`rounded-[4px] overflow-hidden text-[20px] text-white h-[56px] px-[21px] flex justify-center items-center font-medium ${
+      className={`rounded-[4px] overflow-hidden text-[22px] text-white h-[56px] px-[21px] flex justify-center items-center font-medium ${
         active ? `bg-[#000] bg-opacity-10` : ""
       }`}
       {...props}

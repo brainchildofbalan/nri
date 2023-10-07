@@ -1,6 +1,7 @@
 import { cartState } from "@components/hooks/state";
 import { useApi } from "@components/hooks/useApi";
 import { useFormatDate } from "@components/hooks/useFormatDate";
+import { useMakePayment } from "@components/hooks/useMakePayment";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
@@ -17,6 +18,7 @@ export const useCartDetails = () => {
     const { api } = useApi()
     const { formatDate } = useFormatDate()
     const [cart, setCart] = useRecoilState(cartState);
+    const { makePayment } = useMakePayment()
 
     console.log(cart);
     const validationSchema = Yup.object().shape({
@@ -24,6 +26,7 @@ export const useCartDetails = () => {
         user_name: Yup.string().required('User name is required'),
         date_of_birth: Yup.string().required('Date of birth is required'),
         number: Yup.string().required('Mobile number is required'),
+        address: Yup.string().required('Address is required'),
     });
 
 
@@ -33,6 +36,7 @@ export const useCartDetails = () => {
         user_name: userData?.user_name || '',
         date_of_birth: userData?.date_of_birth || '',
         number: userData?.number || '',
+        address: userData?.address || '',
     };
 
     const handleSubmitFrom = (values, errors) => {
@@ -51,7 +55,8 @@ export const useCartDetails = () => {
             })
             .then(function (response) {
                 if (response?.data?.insertedId) {
-                    router.push(`/checkout/${response?.data?.insertedId}`);
+                    makePayment({ productId: "example_ebook", invoice_id: response?.data?.insertedId })
+                    // router.push(`/checkout/${response?.data?.insertedId}`);
                 }
                 else {
                     console.log(`error`);
@@ -147,6 +152,7 @@ export const useCartDetails = () => {
         setCartLogin,
         userData,
         setUserData,
-        clearCart
+        clearCart,
+        makePayment
     }
 }

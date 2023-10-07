@@ -9,9 +9,9 @@ const Menu = ({ setMenuOpen }) => {
 
   return (
     <div
-      className={`flex h-full text-black gap-[40px] items-center text-[18px]`}
+      className={`flex h-full text-black gap-[40px] items-center text-[20px]`}
     >
-      <ul className={`flex gap-[40px] items-center `}>
+      <ul className={`flex gap-[30px] items-center `}>
         <li className={`h-[67px] flex items-center font-medium`}>
           <Link href={`/`}>
             <span>Home</span>

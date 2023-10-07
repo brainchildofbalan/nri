@@ -5,7 +5,7 @@ import React from "react";
 const CartPage = () => {
   return (
     <>
-      <BreadCrumbs />
+      <BreadCrumbs title={`Cart`} />
       <CartDetails />
     </>
   );
