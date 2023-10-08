@@ -15,7 +15,7 @@ const ServiceDetailsContent = ({
     (item) => item.category_id !== category_id
   );
   return (
-    <div className={`w-full relative py-[20px] md:py-[50px]`}>
+    <div className={`w-full relative py-[20px] md:py-[40px]`}>
       <div className={`container mx-auto px-[15px]`}>
         <div className={`flex flex-wrap m-[-10px]`}>
           <div className={`w-full lg:w-2/3   p-[10px]`}>

@@ -19,8 +19,8 @@ const WhyWill = () => {
         <div className={`w-full flex flex-wrap relative z-30`}>
           <div className={`w-full lg:w-1/2`}>
             <div className={`w-full `}>
-              <div className={`aspect-[609/392] relative`}>
-                <Image fill src={`/images/why/why-image.jpg`} />
+              <div className={`aspect-[609/392] relative bg-[#fafafa]`}>
+                <Image fill src={`/images/why/why-image-1.jpg`} />
               </div>
             </div>
           </div>

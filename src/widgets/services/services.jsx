@@ -3,7 +3,7 @@ import React from "react";
 
 const Services = ({ data }) => {
   return (
-    <div className={`w-full relative py-[20px] md:py-[50px]`}>
+    <div className={`w-full relative py-[20px] md:py-[40px]`}>
       <div className={`container px-[15px] mx-auto`}>
         <div className={`relative flex flex-wrap m-[-10px]`}>
           {data.length !== 0

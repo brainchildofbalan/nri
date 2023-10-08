@@ -5,7 +5,6 @@ import React from "react";
 const Footer = async () => {
   const options = { cache: "no-store" };
   const data = await useFetch(`/services-categories`, options);
-  console.log(data);
   return (
     <footer className="bg-[#054446]  text-white pt-[30px] border-t-4 border-[#03282A] ">
       <div className={`container px-[15px] mx-auto  pb-[50px]`}>

@@ -4,11 +4,11 @@ import React from "react";
 const Banner = () => {
   return (
     <div
-      className={`w-full aspect-[16/9] md:aspect-[1727/265] relative mt-[107px]`}
+      className={`w-full aspect-[16/9] md:aspect-[1727/351] relative mt-[107px]`}
     >
       <Image
-        src={`/images/banner/banner.jpg`}
-        quality={99.8}
+        src={`/images/banner/banner-2.jpg`}
+        quality={100}
         fill
         alt={`banner`}
         className="object-cover object-[70%]"

@@ -60,7 +60,7 @@ const ServiceDetailItem = ({
           className={`w-full sm:w-auto flex ml-auto items-center mt-2 sm:mt-0`}
         >
           <a
-            href={`https://wa.me/+919645550072 ?text=I'm%20interested%20in%20your%20service`}
+            href={`https://wa.me/+919645550074 ?text=I'm%20interested%20in%20your%20service`}
             className={`w-full lg:mr-[15px] border bg-[#25D366] hover:bg-[#1d9b41] text-white rounded-[3px] overflow-hidden h-[42px] md:h-[48px] px-[20px] flex items-center justify-center transition-all duration-300 border-[#25D366]`}
           >
             <span>

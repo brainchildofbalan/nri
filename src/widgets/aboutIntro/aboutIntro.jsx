@@ -10,7 +10,9 @@ const AboutIntro = () => {
         >
           <div className={`w-full lg:w-1/2`}>
             <div className={`w-full`}>
-              <div className={`w-full max-w-[545px] relative aspect-[545/363]`}>
+              <div
+                className={`w-full max-w-[545px] 2xl:max-w-[655px] relative aspect-[545/363]`}
+              >
                 <Image
                   src={"/images/about-us/into.jpg"}
                   alt="about banner"
