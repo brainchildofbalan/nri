@@ -5,7 +5,7 @@ import React from "react";
 
 const WhyWill = () => {
   return (
-    <section className={`w-full relative bg-[#0B888D] text-white`}>
+    <section className={`w-full relative bg-[#054446] text-white`}>
       <div className={`container px-[15px] mx-auto relative  py-[50px]`}>
         <span
           className={`hidden lg:block w-[260px] h-full bg-white absolute left-[-4%] top-0`}
@@ -28,7 +28,7 @@ const WhyWill = () => {
             <div
               className={`w-full flex flex-col relative text-[18px] items-start mt-[30px] lg:mt-0`}
             >
-              <div className={`mb-[15px]`}>
+              <div className={`mb-[10px]`}>
                 <Title title={`Why not make a will?`} />
               </div>
               <p className={`mb-[15px] opacity-90 leading-[1.6]`}>
@@ -40,32 +40,32 @@ const WhyWill = () => {
                 className={`flex flex-wrap [&>*]:after:w-[4px] [&>*]:after:h-[4px] [&>*]:after:rounded-full [&>*]:after:bg-white [&>*]:relative [&>*]:ps-[17px] [&>*]:after:flex [&>*]:after:absolute [&>*]:after:left-0 [&>*]:after:top-[12px] text-[18px]`}
               >
                 <li
-                  className={`w-full sm:w-1/2 my-[8px] opacity-90 text-[16px]`}
+                  className={`w-full sm:w-1/2 my-[5px] opacity-90 text-[16px]`}
                 >
                   Asset Distribution
                 </li>
                 <li
-                  className={`w-full sm:w-1/2 my-[8px] opacity-90 text-[16px]`}
+                  className={`w-full sm:w-1/2 my-[5px] opacity-90 text-[16px]`}
                 >
                   Guardianship of Minors
                 </li>
                 <li
-                  className={`w-full sm:w-1/2 my-[8px] opacity-90 text-[16px]`}
+                  className={`w-full sm:w-1/2 my-[5px] opacity-90 text-[16px]`}
                 >
                   Avoiding Intestacy Laws
                 </li>
                 <li
-                  className={`w-full sm:w-1/2 my-[8px] opacity-90 text-[16px]`}
+                  className={`w-full sm:w-1/2 my-[5px] opacity-90 text-[16px]`}
                 >
                   Reducing Family Disputes
                 </li>
                 <li
-                  className={`w-full sm:w-1/2 my-[8px] opacity-90 text-[16px]`}
+                  className={`w-full sm:w-1/2 my-[5px] opacity-90 text-[16px]`}
                 >
                   Executor Appointment
                 </li>
                 <li
-                  className={`w-full sm:w-1/2 my-[8px] opacity-90 text-[16px]`}
+                  className={`w-full sm:w-1/2 my-[5px] opacity-90 text-[16px]`}
                 >
                   Charitable Contributions
                 </li>
@@ -75,8 +75,7 @@ const WhyWill = () => {
                   as={`link`}
                   href={`/`}
                   text={`Purchase will`}
-                  classNames={`!bg-white !text-black`}
-                  isIconLight
+                  classNames={`!bg-[#ED781A]`}
                 />
               </div>
             </div>

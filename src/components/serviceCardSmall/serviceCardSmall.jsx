@@ -16,7 +16,7 @@ const ServiceCardSmall = ({ title, href }) => {
         <div className={`flex justify-between items-center w-full`}>
           <p>Learn more</p>
           <div
-            className={`w-[37px] h-[37px] rounded-full bg-[#09757A] flex justify-center items-center`}
+            className={`w-[37px] h-[37px] rounded-full bg-[#0eabb1] flex justify-center items-center`}
           >
             <svg
               width="8"

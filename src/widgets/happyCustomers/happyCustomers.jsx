@@ -55,7 +55,7 @@ const HappyCustomers = () => {
         className={`w-[125px] mt-[50px] p-[13px] rounded-[40px] bg-[#E6F1F2] mx-auto flex justify-between`}
       >
         <button
-          className={`w-[45px] h-[45px] rounded-full bg-[#09757A] flex justify-center items-center rotate-180`}
+          className={`w-[45px] h-[45px] rounded-full bg-[#0eabb1] flex justify-center items-center rotate-180`}
         >
           <svg
             width="8"
@@ -73,7 +73,7 @@ const HappyCustomers = () => {
           </svg>
         </button>
         <button
-          className={`w-[45px] h-[45px] rounded-full bg-[#09757A] flex justify-center items-center`}
+          className={`w-[45px] h-[45px] rounded-full bg-[#0eabb1] flex justify-center items-center`}
         >
           <svg
             width="8"

@@ -7,10 +7,10 @@ const Footer = async () => {
   const data = await useFetch(`/services-categories`, options);
   console.log(data);
   return (
-    <footer className="bg-[#054446]  text-white pt-[40px] border-t-4 border-[#03282A] ">
+    <footer className="bg-[#054446]  text-white pt-[30px] border-t-4 border-[#03282A] ">
       <div className={`container px-[15px] mx-auto  pb-[50px]`}>
         <div className={`w-full flex flex-col justify-center items-center`}>
-          <div className={`w-auto flex flex-col mb-[40px]`}>
+          <div className={`w-auto flex flex-col mb-[20px]`}>
             <h4 className={`text-[30px] mb-[3px] text-center`}>NRI'SLife</h4>
             <p className={`mb-0 text-center`}>Service and support for nri’s</p>
           </div>
@@ -37,7 +37,7 @@ const Footer = async () => {
         </div>
       </div>
       <div
-        className={`py-[15px] w-full min-h-[85px] flex items-center bg-[#03282A] text-white overflow-hidden`}
+        className={`py-[15px] w-full min-h-[55px] flex items-center bg-[#03282A] text-white overflow-hidden`}
       >
         <div
           className={`container px-[15px] mx-auto flex flex-col-reverse md:flex-row`}
