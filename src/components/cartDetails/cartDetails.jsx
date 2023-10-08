@@ -43,15 +43,15 @@ const CartDetails = () => {
               >
                 {({ values, handleChange, handleBlur, handleSubmit }) => (
                   <Form onSubmit={handleSubmit}>
-                    <div className={`w-full py-[50px]`}>
+                    <div className={`w-full py-[30px] md:py-[50px]`}>
                       <div className={`container mx-auto px-[15px]`}>
                         <div
-                          className={`w-full flex flex-wrap relative -m-[10px]`}
+                          className={`w-full flex flex-wrap relative lg:-m-[10px]`}
                         >
-                          <div className={`w-2/3 p-[10px]`}>
+                          <div className={`w-full lg:w-2/3 p-[10px]`}>
                             <div className={`w-full relative`}>
                               <div
-                                className={`w-full flex justify-end mb-[20px]`}
+                                className={`w-full  justify-end mb-[20px] hidden lg:flex`}
                               >
                                 <Button
                                   text={`Add more package`}
@@ -65,26 +65,28 @@ const CartDetails = () => {
                                     return (
                                       <div
                                         key={index}
-                                        className={`w-full flex flex-wrap items-center border p-[15px]`}
+                                        className={`w-full flex flex-wrap items-center border p-[10px] md:p-[15px]`}
                                       >
                                         <div
-                                          className={`w-full flex-1 flex items-center`}
+                                          className={`w-full flex-1 flex flex-wrap md:flex-nowrap items-center pr-[10px] md:pr-[0px]`}
                                         >
-                                          <div className={`w-3/6`}>
+                                          <div className={`w-4/6 md:w-3/6`}>
                                             <p
-                                              className={`mb-0 text-[20px] font-medium`}
+                                              className={`mb-0 text-[18px] lg:text-[20px] font-medium`}
                                             >
                                               {item.title.category_name}
                                             </p>
                                           </div>
                                           <div className={`w-2/6`}>
                                             <p
-                                              className={`mb-0 text-[16px] opacity-40`}
+                                              className={`mb-0 text-[12px] lg:text-[16px] opacity-40`}
                                             >
                                               Estimated time : 1 week
                                             </p>
                                           </div>
-                                          <div className={`w-1/6`}>
+                                          <div
+                                            className={`w-full md:w-1/6 border-t mt-[10px] pt-[10px] md:border-t-0 md:mt-[0px] md:pt-[0px]`}
+                                          >
                                             <p
                                               className={`mb-0 text-[20px] font-semibold`}
                                             >
@@ -120,9 +122,11 @@ const CartDetails = () => {
                     / */}
 
                               <div className={`w-full relative mt-[20px]`}>
-                                <div className={`w-full bg-[#F8F5F5] p-[30px]`}>
+                                <div
+                                  className={`w-full bg-[#F8F5F5] p-[8px]  lg:p-[30px]`}
+                                >
                                   <div
-                                    className={`w-full flex justify-between items-center  mb-[20px] px-[10px]`}
+                                    className={`w-full flex flex-col lg:flex-row justify-between items-center  mb-[20px] px-[10px]`}
                                   >
                                     <h3
                                       className={` relative text-left text-[18px] mb-0 font-medium`}
@@ -263,7 +267,7 @@ const CartDetails = () => {
                   / */}
                             </div>
                           </div>
-                          <div className={`w-1/3 p-[10px] mt-[30px]`}>
+                          <div className={`w-full lg:w-1/3 p-[10px] mt-[30px]`}>
                             <div className={`w-full flex justify-end`}>
                               <button
                                 className={`underline text-[16px] mb-[15px] opacity-50`}

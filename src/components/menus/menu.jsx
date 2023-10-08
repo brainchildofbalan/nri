@@ -18,7 +18,7 @@ const Menu = ({ setMenuOpen }) => {
           </Link>
         </li>
         <li className={`h-[67px] flex items-center font-medium`}>
-          <Link href={`/`}>
+          <Link href={`/about-us`}>
             <span>About Us</span>
           </Link>
         </li>

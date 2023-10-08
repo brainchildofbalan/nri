@@ -7,7 +7,7 @@ const ConnectUs = () => {
     <section className={`w-full relative mb-[50px]`}>
       <div className={`container px-[15px] mx-auto`}>
         <div
-          className={`w-max mx-auto p-[15px] md:p-[20px] rounded-[10px] overflow-hidden bg-[#F5F5F5]`}
+          className={`w-max max-w-full mx-auto p-[15px] md:p-[20px] rounded-[10px] overflow-hidden bg-[#F5F5F5]`}
         >
           <div className={`w-full max-w-[712.7px] mx-auto`}>
             <div
