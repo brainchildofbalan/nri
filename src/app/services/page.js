@@ -3,10 +3,10 @@ import useFetch from "@components/hooks/useFetch";
 
 const services = async () => {
     const options = { cache: "no-store" };
-    const data = await useFetch(`/services-categories`, options);
+    const data = await useFetch(`/services`, options);
     return (
 
-        <ServicesAndPackagesPage {...data} />
+        <ServicesAndPackagesPage total={data} />
 
     )
 }
