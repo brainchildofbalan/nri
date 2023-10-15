@@ -12,27 +12,43 @@ const ServiceCard = ({
   url,
   category_id,
   isBgGrey,
+  image
 }) => {
+  if (image) {
+    console.log(`${process.env.NEXT_PUBLIC_APP_URL}uploads/${image[0]?.filename}`, category_name);
+
+  }
   const { handleAddCart } = userServiceCard();
   return (
     <div className={`w-full relative flex flex-col h-full`}>
       <Link
         href={`/services/${url}`}
-        className={`w-full aspect-[419.9/70] relative`}
+        className={`w-full aspect-[780/250] relative`}
       >
-        <Image
-          src={`/images/banner/banner.jpg`}
-          quality={99.8}
-          priority
-          fill
-          alt={`banner`}
-          className="object-cover object-[70%]"
-        />
+        {
+          image?.length > 0 ?
+            <Image
+              src={`${process.env.NEXT_PUBLIC_APP_URL}/uploads/${image[0].filename}`}
+              quality={99.8}
+              priority
+              fill
+              alt={`banner`}
+              className="object-cover object-[70%]"
+            /> :
+            <Image
+              src={`/images/banner/banner.jpg`}
+              quality={99.8}
+              priority
+              fill
+              alt={`banner`}
+              className="object-cover object-[70%]"
+            />
+        }
+
       </Link>
       <div
-        className={`w-full relative ${
-          !isBgGrey ? `border` : `bg-[#F5F5F5] bg-opacity-50 border-b`
-        } border-t-0 px-[20px] py-[11px] flex-1 flex flex-col`}
+        className={`w-full relative ${!isBgGrey ? `border` : `bg-[#F5F5F5] bg-opacity-50 border-b`
+          } border-t-0 px-[20px] py-[11px] flex-1 flex flex-col`}
       >
         <Link href={`/services/${url}`} className={`w-full`}>
           <h3 className={`text-[20px] mb-[5px] font-semibold text-[#0C999F]`}>

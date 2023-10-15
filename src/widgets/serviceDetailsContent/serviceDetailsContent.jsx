@@ -10,6 +10,7 @@ const ServiceDetailsContent = ({
   content,
   han,
   handleBuyNow,
+  image,
 }) => {
   const filteredData = more_services.filter(
     (item) => item.category_id !== category_id
@@ -25,9 +26,10 @@ const ServiceDetailsContent = ({
               content={content}
               category_id={category_id}
               handleBuyNow={handleBuyNow}
+              image={image}
             />
           </div>
-          <div className={`w-full lg:w-1/3 p-[10px] flex flex-wrap`}>
+          <div className={`w-full lg:w-1/3 p-[10px] flex flex-wrap lg:flex-nowrap lg:flex-col`}>
             {filteredData.map((item, index) => {
               return (
                 <div

@@ -9,17 +9,30 @@ const ServiceDetailItem = ({
   content,
   category_id,
   handleBuyNow,
+  image
 }) => {
   return (
     <div className={`w-full relative flex flex-col lg:pr-[30px]`}>
-      <div className={`w-full aspect-[419.9/70] relative`}>
-        <Image
-          src={`/images/banner/banner.jpg`}
-          quality={99.8}
-          fill
-          alt={`banner`}
-          className="object-cover object-[70%]"
-        />
+      <div className={`w-full aspect-[780/250] relative`}>
+        {
+          image?.length > 0 ?
+            <Image
+              src={`${process.env.NEXT_PUBLIC_APP_URL}/uploads/${image[0].filename}`}
+              quality={99.8}
+              priority
+              fill
+              alt={`banner`}
+              className="object-cover object-[70%]"
+            /> :
+            <Image
+              src={`/images/banner/banner.jpg`}
+              quality={99.8}
+              priority
+              fill
+              alt={`banner`}
+              className="object-cover object-[70%]"
+            />
+        }
       </div>
       <div
         className={`w-full flex flex-col md:flex-row justify-between mt-[30px] items-center`}
@@ -35,7 +48,7 @@ const ServiceDetailItem = ({
         </p>
       </div>
       <div
-        className={`w-full relative mt-[10px] text-[18px] leading-[1.7] [&>*>ul]:list-disc [&>*>ul]:pl-[40px] [&>*>ul>li]:mb-[12px] [&>*>ul>li]:relative [&>*::after]:bg-black]`}
+        className={`w-full relative mt-[10px] text-[16px] leading-[1.5] [&>*>ul]:list-disc [&>*>ul]:pl-[40px] [&>*>ul>li]:mb-[12px] [&>*>ul>li]:relative [&>*::after]:bg-black]`}
       >
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
