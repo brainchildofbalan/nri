@@ -19,3 +19,44 @@
 body {
   width: 100%;
 }
+
+.content-area{
+  width: 100%;
+  position: relative;
+}
+
+.content-area h3{
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.content-area p{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.content-area ul li{
+  font-size: 16px;
+  line-height: 1.6;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.content-area ul li:last-child{
+  margin-bottom: 0;
+}
+.content-area ul li::after{
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  content: '';
+  background-color: #000;
+  border-radius: 50px;
+}
+.content-area ul + h3{
+  margin-top: 20px;
+}

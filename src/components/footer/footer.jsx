@@ -81,6 +81,14 @@ const Footer = async () => {
                   Contact Us{" "}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={`/privacy-policy`}
+                  className={`whitespace-pre text-[14px`}
+                >
+                  Privacy policy{" "}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
