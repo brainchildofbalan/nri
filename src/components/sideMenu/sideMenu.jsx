@@ -3,6 +3,10 @@ import React from "react";
 import Button from "../button/button";
 
 const SideMenu = ({ sideMenuOpen, setSideMenuOpen }) => {
+
+  const handleCloseClick = () => {
+    setSideMenuOpen(prev => !prev)
+  }
   return (
     <>
       {sideMenuOpen && (
@@ -13,27 +17,23 @@ const SideMenu = ({ sideMenuOpen, setSideMenuOpen }) => {
             className={`flex flex-col gap-[20px] [&>*]:after:w-[8px] [&>*]:after:h-[8px] [&>*]:after:border-r-[2px] [&>*]:after:border-b-[2px] [&>*]:after:border-[#000] [&>*]:after:-rotate-45 [&>*]:after:absolute [&>*]:after:right-0 [&>*]:after:bottom-0 [&>*]:after:top-0 [&>*]:after:m-auto`}
           >
             <li className={`relative flex`}>
-              <Link href={`/`}>
+              <Link href={`/`} onClick={handleCloseClick}>
                 <span>Home</span>
               </Link>
             </li>
             <li className={`relative flex`}>
-              <Link href={`/`}>
+              <Link href={`/about-us`} onClick={handleCloseClick}>
                 <span>About Us</span>
               </Link>
             </li>
             <li className={`relative flex`}>
-              <Link href={`/`}>
+              <Link href={`/services`} onClick={handleCloseClick}>
                 <span>Services</span>
               </Link>
             </li>
+
             <li className={`relative flex`}>
-              <Link href={`/`}>
-                <span>Price and package</span>
-              </Link>
-            </li>
-            <li className={`relative flex`}>
-              <Link href={`/`}>
+              <Link href={`/contact-us`} onClick={handleCloseClick}>
                 <span>Contact us</span>
               </Link>
             </li>
