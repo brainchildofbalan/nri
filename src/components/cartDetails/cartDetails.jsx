@@ -90,7 +90,7 @@ const CartDetails = () => {
                                             <p
                                               className={`mb-0 text-[20px] font-semibold`}
                                             >
-                                              ${item.price}
+                                              ₹{item.price}
                                             </p>
                                           </div>
                                         </div>
