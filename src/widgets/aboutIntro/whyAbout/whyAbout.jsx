@@ -13,7 +13,7 @@ const WhyAbout = () => {
           >
             <div className={`w-full sm:w-1/2 lg:w-1/4 px-[15px]`}>
               <div className={`w-full flex flex-col text-white`}>
-                <h3 className={`w-full text-[20px] text-white mb-[8px]`}>
+                <h3 className={`w-full text-[20px] text-white mb-[3px]`}>
                   Expertise
                 </h3>
                 <p
@@ -27,7 +27,7 @@ const WhyAbout = () => {
             </div>
             <div className={`w-full sm:w-1/2 lg:w-1/4 px-[15px]`}>
               <div className={`w-full flex flex-col text-white`}>
-                <h3 className={`w-full text-[20px] text-white mb-[8px]`}>
+                <h3 className={`w-full text-[20px] text-white mb-[3px]`}>
                   Customer-Centric
                 </h3>
                 <p
@@ -42,7 +42,7 @@ const WhyAbout = () => {
 
             <div className={`w-full sm:w-1/2 lg:w-1/4 px-[15px]`}>
               <div className={`w-full flex flex-col text-white`}>
-                <h3 className={`w-full text-[20px] text-white mb-[8px]`}>
+                <h3 className={`w-full text-[20px] text-white mb-[3px]`}>
                   Transparency
                 </h3>
                 <p
@@ -57,7 +57,7 @@ const WhyAbout = () => {
 
             <div className={`w-full sm:w-1/2 lg:w-1/4 px-[15px]`}>
               <div className={`w-full flex flex-col text-white`}>
-                <h3 className={`w-full text-[20px] text-white mb-[8px]`}>
+                <h3 className={`w-full text-[20px] text-white mb-[3px]`}>
                   Technology
                 </h3>
                 <p

@@ -8,7 +8,7 @@ const AboutIntro = () => {
         <div
           className={`w-full relative flex flex-wrap flex-col-reverse lg:flex-row gap-y-[20px] lg:gap-y-0`}
         >
-          <div className={`w-full lg:w-1/2`}>
+          <div className={`w-full lg:w-1/2 lg:pr-[30px]`}>
             <div className={`w-full`}>
               <div
                 className={`w-full max-w-[545px] 2xl:max-w-[655px] relative aspect-[545/363]`}

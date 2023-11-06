@@ -190,7 +190,7 @@ const ContactUsPage = () => {
                             type="email"
                             name="user_email"
                             value={values.user_email}
-                            placeholder="Enter user name"
+                            placeholder="Enter email address"
                           />
                           <ErrorMessage
                             name="user_email"

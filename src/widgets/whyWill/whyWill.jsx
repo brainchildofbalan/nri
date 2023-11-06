@@ -73,7 +73,7 @@ const WhyWill = () => {
               <div className={`w-auto mt-[20px]`}>
                 <Button
                   as={`link`}
-                  href={`/`}
+                  href={`/services/will`}
                   text={`Purchase will`}
                   classNames={`!bg-[#ED781A]`}
                 />
