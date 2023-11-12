@@ -5,7 +5,6 @@ import { useMakePayment } from "@components/hooks/useMakePayment";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
-const TAX_PERCENTAGE = 6;
 import * as Yup from 'yup';
 
 export const useCartDetails = () => {
@@ -47,8 +46,6 @@ export const useCartDetails = () => {
             .post("/cart", {
                 ...values,
                 date_of_birth_formatted,
-                tax_amount: calculateValue(TAX_PERCENTAGE, totalAmountSub).toFixed(2),
-                order_amount: totalAmount,
                 order_amount_sub: totalAmountSub,
                 cartList,
                 userData
