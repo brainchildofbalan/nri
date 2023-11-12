@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import * as Yup from 'yup';
-TAX_PERCENTAGE = 6;
+const TAX_PERCENTAGE = 6;
 export const useCartDetails = () => {
     const [userData, setUserData] = useState([]);
     const [cartList, setCartList] = useState([]);
