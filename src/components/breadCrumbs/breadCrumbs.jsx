@@ -5,7 +5,7 @@ import Link from "next/link";
 const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
   return (
     <section
-      className={`w-full relative min-h-[70px] md:min-h-[93px] mt-[118px] bg-[#F5F5F5] flex items-center border-b`}
+      className={`w-full relative min-h-[40px] md:min-h-[60px] mt-[118px] bg-[#F5F5F5] flex items-center border-b`}
     >
       <div className={`container mx-auto px-[15px]`}>
         <div className={`w-full relative flex flex-wrap`}>

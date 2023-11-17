@@ -72,10 +72,10 @@ const ContactUsPage = () => {
                 <div className={`w-1/3 flex flex-col items-center`}>
                   <a href="/" className={`flex py-[30px] flex-col`}>
                     <div
-                      className={`w-[22px] h-[22px] invert mx-auto mb-[20px]`}
+                      className={`w-[22px] h-[22px] mx-auto mb-[20px]`}
                     >
                       <img
-                        src="/images/header/instagram.svg"
+                        src="/images/icons/email.svg"
                         className={`w-full h-full object-contain`}
                         alt=""
                       />
@@ -88,10 +88,10 @@ const ContactUsPage = () => {
                 >
                   <a href="/" className={`flex py-[30px] flex-col`}>
                     <div
-                      className={`w-[22px] h-[22px] invert mx-auto mb-[20px]`}
+                      className={`w-[22px] h-[22px] mx-auto mb-[20px]`}
                     >
                       <img
-                        src="/images/header/instagram.svg"
+                        src="/images/icons/location.svg"
                         className={`w-full h-full object-contain`}
                         alt=""
                       />
@@ -104,10 +104,10 @@ const ContactUsPage = () => {
                 <div className={`w-1/3 flex flex-col items-center`}>
                   <div className={`flex py-[30px] flex-col`}>
                     <div
-                      className={`w-[22px] h-[22px] invert mx-auto mb-[20px]`}
+                      className={`w-[22px] h-[22px] mx-auto mb-[20px]`}
                     >
                       <img
-                        src="/images/header/instagram.svg"
+                        src="/images/icons/call.svg"
                         className={`w-full h-full object-contain`}
                         alt=""
                       />
@@ -157,7 +157,7 @@ const ContactUsPage = () => {
                             type="text"
                             name="user_name"
                             value={values.user_name}
-                            placeholder="Enter user name"
+                            placeholder="Enter name"
                           />
                           <ErrorMessage
                             name="user_name"
@@ -174,7 +174,7 @@ const ContactUsPage = () => {
                             type="text"
                             name="user_number"
                             value={values.user_number}
-                            placeholder="Enter number"
+                            placeholder="Enter phone number"
                           />
                           <ErrorMessage
                             name="user_number"
