@@ -12,6 +12,7 @@ export const useCartDetails = () => {
     const [cartList, setCartList] = useState([]);
     const [cartLogin, setCartLogin] = useState(false);
     const [totalAmountSub, setTotalAmountSub] = useState(0);
+    const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
     const totalAmount = Number(totalAmountSub) + Number(calculateValue(TAX_PERCENTAGE, totalAmountSub));
     const { api } = useApi()
@@ -41,6 +42,7 @@ export const useCartDetails = () => {
     const handleSubmitFrom = (values, errors) => {
         // Handle form submission here
         const date_of_birth_formatted = values.dob && formatDate(values.date_of_birth)
+        setIsLoading(true)
         console.log(values);
         api
             .post("/cart", {
@@ -52,7 +54,7 @@ export const useCartDetails = () => {
             })
             .then(function (response) {
                 if (response?.data?.insertedId) {
-                    makePayment({ productId: "nri_cart", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess, total: totalAmount })
+                    makePayment({ productId: "nri_cart", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess, total: totalAmount, setIsLoading })
 
                 }
                 else {
@@ -158,6 +160,7 @@ export const useCartDetails = () => {
         userData,
         setUserData,
         clearCart,
-        makePayment
+        makePayment,
+        isLoading
     }
 }

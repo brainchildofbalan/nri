@@ -12,7 +12,7 @@ export const useMakePayment = () => {
 
 
 
-    const makePayment = async ({ productId = null, invoice_id, clearCart, total }) => {
+    const makePayment = async ({ productId = null, invoice_id, clearCart, total, setIsLoading }) => {
         // Make API call to the serverless API
         const responseItem = await useFetch('/pay-now', {
             method: 'POST',
@@ -36,7 +36,7 @@ export const useMakePayment = () => {
                 handler: function (response) {
                     console.log(response);
                     // Handle the success response here
-
+                    setIsLoading(false)
                     api
                         .post(`/cart-action/${invoice_id}`, { payer_details: response.razorpay_signature, order_id: response.razorpay_order_id, payment_status: 'paid' })
                         .then(function (response) {
@@ -44,6 +44,7 @@ export const useMakePayment = () => {
                             router.push(`/success?order=${invoice_id}`);
                             if (clearCart) {
                                 clearCart()
+
                             }
                         })
                         .catch(function (error) {
@@ -57,6 +58,7 @@ export const useMakePayment = () => {
 
 
             rzp.on("payment.failed", function (response) {
+                setIsLoading(false)
                 alert("Payment failed. Please try again. Contact support for help");
             });
         }

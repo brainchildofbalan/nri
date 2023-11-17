@@ -50,7 +50,7 @@ const SuccessPage = ({ data }) => {
                 className={`w-full flex flex-wrap pb-[15px] mb-[15px] border-b`}
               >
                 <div className={`w-1/2`}>Tax (8%)</div>
-                <div className={`w-1/2 font-medium`}>₹{tax_amount}</div>
+                <div className={`w-1/2 font-medium`}>₹{Number(tax_amount).toFixed(2)}</div>
               </div>
 
               <div className={`w-full flex flex-wrap `}>
