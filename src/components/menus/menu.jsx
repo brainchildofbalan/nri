@@ -39,17 +39,26 @@ const Menu = ({ setMenuOpen }) => {
             <span>Price and package</span>
           </Link>
         </li>
-        <li className={`h-[67px] flex items-center font-medium`}>
-          <Link href={`/cart`}>
-            <span>cart</span>
-          </Link>
-        </li>
       </ul>
       <Link href={`/contact-us`}>
         <Button text={`Contact Us`} classNames={`text-[18px]`}>
           Contact Us
         </Button>
       </Link>
+      <ul>
+        <li className={`h-[67px] flex items-center font-medium`}>
+          <Link href={`/cart`} className="flex gap-[8px]">
+            <span>{`Cart${
+              cartValues && cartValues.length > 0
+                ? `(${cartValues.length})`
+                : ""
+            }`}</span>
+            <span>
+              <img src="/images/icons/cart-icon.svg" alt="cart icon" />
+            </span>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };
