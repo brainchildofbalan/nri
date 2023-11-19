@@ -9,30 +9,30 @@ const ServiceDetailItem = ({
   content,
   category_id,
   handleBuyNow,
-  image
+  image,
 }) => {
   return (
     <div className={`w-full relative flex flex-col lg:pr-[30px]`}>
       <div className={`w-full aspect-[780/250] relative`}>
-        {
-          image?.length > 0 ?
-            <Image
-              src={`${process.env.NEXT_PUBLIC_APP_URL}/uploads/${image[0].filename}`}
-              quality={99.8}
-              priority
-              fill
-              alt={`banner`}
-              className="object-cover object-[70%]"
-            /> :
-            <Image
-              src={`/images/banner/banner.jpg`}
-              quality={99.8}
-              priority
-              fill
-              alt={`banner`}
-              className="object-cover object-[70%]"
-            />
-        }
+        {image?.length > 0 ? (
+          <Image
+            src={`${process.env.NEXT_PUBLIC_APP_URL}/uploads/${image[0].filename}`}
+            quality={99.8}
+            priority
+            fill
+            alt={`banner`}
+            className="object-cover object-[70%]"
+          />
+        ) : (
+          <Image
+            src={`/images/banner/banner.jpg`}
+            quality={99.8}
+            priority
+            fill
+            alt={`banner`}
+            className="object-cover object-[70%]"
+          />
+        )}
       </div>
       <div
         className={`w-full flex flex-col md:flex-row justify-between mt-[30px] items-center`}
@@ -58,9 +58,14 @@ const ServiceDetailItem = ({
         <div className={`w-full sm:w-auto flex items-center`}>
           <p className={`pr-[10px] hidden md:flex`}>Price</p>
           <p
-            className={`mr-[10px] md:mr-[15px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[40px] flex items-center justify-center font-bold text-[20px]`}
+            className={`mr-[10px] md:mr-[15px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[40px] flex items-center justify-center font-bold text-[20px] flex-col leading-none`}
           >
-            ₹{price}
+            <span>₹{price}</span>
+            <span
+              className={`text-[11px] mt-[2px] opacity-60 font-normal whitespace-pre`}
+            >
+              Plus gst
+            </span>
           </p>
           <Button
             text={`Buy now`}

@@ -53,7 +53,7 @@ const ConnectUs = () => {
                   <div className={`w-full md:w-1/2 p-[10px]`}>
                     <input
                       type="text"
-                      placeholder="Enter number"
+                      placeholder="Enter phone number"
                       className={`w-full border-b border-[#C7C7C7] h-[55px] p-[18px] placeholder:text-black text-[18px] focus-visible:outline-none focus-visible:shadow-none focus:border-[#000000]`}
                       onChange={handleChange}
                       onBlur={handleBlur}

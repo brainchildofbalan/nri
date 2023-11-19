@@ -14,9 +14,8 @@ const Header = () => {
   return (
     <>
       <header
-        className={`bg-white fixed w-full left-0 top-0 z-50 border-b shadow-sm ${
-          isHeaderHide ? `translate-y-[-50px]` : `translate-y-[0px]`
-        } transition-transform duration-300`}
+        className={`bg-white fixed w-full left-0 top-0 z-50 border-b shadow-sm ${isHeaderHide ? `translate-y-[-50px]` : `translate-y-[0px]`
+          } transition-transform duration-300`}
       >
         <div className={`w-full`}>
           <HeaderTop />
@@ -65,9 +64,8 @@ const Header = () => {
               className={`w-[280px]  h-full bg-white flex items-end z-10 relative`}
             >
               <div
-                className={`${
-                  isHeaderHide ? `h-[67px] !w-[150px]` : `h-full w-[230px]`
-                } transition-all duration-300 ease-in-out flex justify-end`}
+                className={`${isHeaderHide ? `h-[67px] !w-[150px]` : `h-full w-[230px]`
+                  } transition-all duration-300 ease-in-out flex justify-end`}
               >
                 <Link
                   href={`/`}

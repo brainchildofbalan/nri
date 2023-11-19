@@ -31,7 +31,7 @@ const ContactUsPage = () => {
                 <div className={`w-auto flex invert mt-[30px]`}>
                   <ul className={`w-auto flex gap-[27px]`}>
                     <li>
-                      <a href="tel:+917994298158">
+                      <a href="https://www.facebook.com/profile.php?id=61552625924781" target="_blank">
                         <div className={`w-[22px] h-[22px] mr-[5px]`}>
                           <img
                             src="/images/header/facebook.svg"
@@ -42,17 +42,17 @@ const ContactUsPage = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="tel:+917994298158">
-                        <div className={`w-[22px] h-[22px] mr-[5px]`}>
+                      <a href="https://www.youtube.com/@NRILifeChannel" target="_blank">
+                        <div className={`w-[24px] h-[24px] mr-[5px]`}>
                           <img
-                            src="/images/header/instagram.svg"
+                            src="/images/header/youtube.svg"
                             className={`w-full h-full object-contain`}
                             alt=""
                           />
                         </div>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="tel:+917994298158">
                         <div className={`w-[22px] h-[22px] mr-[5px]`}>
                           <img
@@ -62,7 +62,7 @@ const ContactUsPage = () => {
                           />
                         </div>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const ContactUsPage = () => {
                       />
                     </div>
                     <p className={`text-center w-[90%] mx-auto`}>
-                      Planet Tower , Thmaspuram Church Road ,Marad ,Kochi 682304
+                      Planet Tower , Thomaspuram Church Road ,Marad ,Kochi 682304
                     </p>
                   </a>
                 </div>
@@ -114,9 +114,9 @@ const ContactUsPage = () => {
                     </div>
                     <span>
                       {" "}
-                      <a href="tel:+9645550072">+9645550072</a>,{" "}
-                      <a href="tel:+9645550072">73</a>,{" "}
-                      <a href="tel:+9645550072">74</a>
+                      <a href="tel:+919645550072">+919645550072</a>,{" "}
+                      <a href="tel:+919645550073">73</a>,{" "}
+                      <a href="tel:+919645550074">74</a>
                     </span>
                   </div>
                 </div>

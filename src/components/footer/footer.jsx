@@ -11,7 +11,7 @@ const Footer = async () => {
         <div className={`w-full flex flex-col justify-center items-center`}>
           <div className={`w-auto flex flex-col mb-[20px]`}>
             <h4 className={`text-[30px] mb-[3px] text-center`}>NRI'SLife</h4>
-            <p className={`mb-0 text-center`}>Service and support for nri’s</p>
+            <p className={`mb-0 text-center`}>Service and support for NRI’s</p>
           </div>
 
           <div className={`w-auto flex flex-wrap`}>

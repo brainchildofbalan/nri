@@ -26,9 +26,14 @@ const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
               {price && (
                 <>
                   <p
-                    className={`mr-[8px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[20px] flex items-center justify-center font-bold text-[20px]`}
+                    className={`mr-[8px] border border-[#ED781A] rounded-[3px] overflow-hidden h-[40px] md:h-[48px] px-[20px] flex items-center justify-center font-bold text-[20px]  flex-col leading-none`}
                   >
-                    ₹{price || ""}
+                    <span>₹{price || ""}</span>
+                    <span
+                      className={`text-[11px] mt-[2px] opacity-60 font-normal whitespace-pre`}
+                    >
+                      Plus gst
+                    </span>
                   </p>
                   <Button
                     text={`Buy now`}
