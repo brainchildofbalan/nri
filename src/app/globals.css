@@ -102,3 +102,8 @@ body {
     opacity: 0;
   }
 }
+
+
+.swiper-button-disabled{
+  opacity: .8;
+}

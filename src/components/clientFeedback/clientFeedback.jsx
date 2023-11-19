@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const ClientFeedback = () => {
+const ClientFeedback = ({ shortWord, description, name, flag, services }) => {
   return (
     <div>
       <div className={`w-full flex gap-[5px]`}>
@@ -32,14 +32,26 @@ const ClientFeedback = () => {
         />
       </div>
       <div className={`w-full mt-[20px]`}>
+        <ul
+          className={`w-full relative flex flex-wrap gap-[10px] mb-[15px] empty:hidden`}
+        >
+          {services &&
+            services.map((item) => {
+              return (
+                <li>
+                  <p
+                    className={`w-max relative px-[15px] py-[2px] bg-gray-50 rounded-full border`}
+                  >
+                    {item}
+                  </p>
+                </li>
+              );
+            })}
+        </ul>
         <h4 className={`w-full text-[20px] mb-[7px] font-medium`}>
-          Excellent experience.
+          {shortWord || `Excellent experience.`}
         </h4>
-        <p>
-          With a deep understanding of the intricacies involved in cross-border
-          living, our mission is to illuminate the path, ensuring that every
-          step you take is effortless and free from all the hassle.
-        </p>
+        <p>{description}</p>
       </div>
       <div className={`w-full mt-[20px]`}>
         {/* <div
@@ -48,13 +60,14 @@ const ClientFeedback = () => {
           P
         </div> */}
         <h6 className={`text-[16px] text-black font-medium flex items-center`}>
-          <span> Pradheesh Ram</span>
+          <span>{name}</span>
           <span className={`ml-[10px]`}>
-            <Image
+            {flag}
+            {/* <Image
               src={`/images/happy-customers/flg.png`}
               width={23.73}
               height={23.73}
-            />
+            /> */}
           </span>
         </h6>
         {/* <p className={`text-[16px] text-[#A1A1A1]`}>Company</p> */}
