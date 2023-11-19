@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import * as Yup from 'yup';
-const TAX_PERCENTAGE = 6;
+// const TAX_PERCENTAGE = 6;
+const TAX_PERCENTAGE = 18;
 export const useCartDetails = () => {
     const [userData, setUserData] = useState([]);
     const [cartList, setCartList] = useState([]);
@@ -74,7 +75,7 @@ export const useCartDetails = () => {
 
 
     function calculateValue(percentage, number) {
-        return (Number(percentage) / 100) * Number(number);
+        return Math.round((Number(percentage) / 100) * Number(number));
     }
 
     useEffect(() => {
@@ -149,7 +150,7 @@ export const useCartDetails = () => {
     return {
         cartList,
         totalAmountSub,
-        taxPercentage: calculateValue(TAX_PERCENTAGE, totalAmountSub).toFixed(2),
+        taxPercentage: calculateValue(TAX_PERCENTAGE, totalAmountSub),
         totalAmount,
         validationSchema,
         initialValues,

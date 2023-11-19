@@ -294,7 +294,7 @@ const CartDetails = () => {
                               <div
                                 className={`w-full flex flex-wrap pb-[15px] mb-[15px] border-b border-[#b1b1b1]`}
                               >
-                                <div className={`w-1/2`}>Tax (6%)</div>
+                                <div className={`w-1/2`}>Tax (18%)</div>
                                 <div className={`w-1/2 font-medium`}>
                                   ₹{taxPercentage}
                                 </div>
