@@ -1,15 +1,56 @@
-"use client"
 import SuccessPage from "@components/components/pages/sucessPage/successPage";
 import useFetch from "@components/hooks/useFetch";
 import { useSearchParams } from "next/navigation";
 
 
-const success = async () => {
-    const searchParams = useSearchParams();
-    const search = searchParams.get("order");
-    const options = { cache: "no-store" };
-    const data = await useFetch(`/order/${search}`, options);
 
+export async function generateMetadata({ params }) {
+
+    const options = { cache: "no-store" };
+    const data = await useFetch(`/meta-data/success`, options);
+    return {
+        title: data && data.length > 0 ? data[0].site_title : `Nri's Life`,
+        description: data && data.length > 0 ? data[0].site_description : `Nri's Life`,
+        keywords: data && data.length > 0 ? data[0].site_keyword.split(', ') : `Nri's Life`,
+        authors: [{ name: data && data.length > 0 ? data[0].site_keyword.split(', ') : `Nri's Life` }, { name: `NRI's Life`, url: 'https://nrilife.com' }],
+        metadataBase: new URL('https://nrilife.com'),
+        alternates: {
+            canonical: '/',
+            languages: {
+                'en-US': '/en-US',
+                'de-DE': '/de-DE',
+            },
+        },
+        openGraph: {
+            title: data && data.length > 0 ? data[0].site_title : `Nri's Life`,
+            description: data && data.length > 0 ? data[0].site_description : `Nri's Life`,
+            url: 'https://nrilife.com',
+            siteName: `NRI's Life`,
+            images: data && data.length > 0 && data[0].images ? `${process.env.NEXT_PUBLIC_APP_URL}/uploads/${data[0].filename}` : '/apple-touch-icon.png',
+            locale: 'en_IN',
+            type: 'website',
+        },
+
+        robots: {
+            index: true,
+            follow: true,
+            nocache: true,
+            googleBot: {
+                index: true,
+                follow: true,
+            },
+        },
+    }
+}
+
+
+
+
+
+const success = async ({ searchParams }) => {
+    const options = { cache: "no-store" };
+    const data = await useFetch(`/order/${searchParams.order}`, options);
+    console.log(searchParams)
 
     return (
         <>

@@ -6,10 +6,7 @@ import RecoilContext from '@components/components/recoilContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: `NRI's help`,
-  description: 'Support for nri',
-}
+
 
 export default function RootLayout({ children }) {
   return (
