@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
             description: data && data.length > 0 ? data[0].site_description : `Nri's Life`,
             url: 'https://nrilife.com',
             siteName: `NRI's Life`,
-            images: data && data.length > 0 && data[0].images ? `${process.env.NEXT_PUBLIC_APP_URL}/uploads/${data[0].filename}` : '/apple-touch-icon.png',
+            images: (data && data.length > 0 && data[0].image) ? `${process.env.NEXT_PUBLIC_APP_URL}/uploads/${data[0].image[0].filename}` : '/apple-touch-icon.png',
             locale: 'en_IN',
             type: 'website',
         },
