@@ -39,19 +39,19 @@ const Footer = async () => {
         className={`py-[15px] w-full min-h-[55px] flex items-center bg-[#03282A] text-white overflow-hidden`}
       >
         <div
-          className={`container px-[15px] mx-auto flex flex-col-reverse md:flex-row`}
+          className={`container px-[15px] mx-auto flex flex-col-reverse lg:flex-row`}
         >
           <div
-            className={`w-full sm:w-auto sm:mr-auto relative flex justify-between`}
+            className={`w-full lg:w-auto lg:mr-auto relative flex justify-between`}
           >
             <p
-              className={`w-full text-center md:text-left mt-[15px] md:mt-0 text-[14px]`}
+              className={`w-full text-center lg:text-left mt-[15px] lg:mt-0 text-[14px]`}
             >
               Copyright@2023 NRILife
             </p>
           </div>
           <div className={`w-auto`}>
-            <ul className="flex gap-x-[20px] md:gap-x-[33px] gap-y-[10px] text-[14px   flex-wrap justify-center">
+            <ul className="flex gap-x-[20px] lg:gap-x-[33px] gap-y-[10px] text-[14px   flex-wrap justify-center">
               <li>
                 <Link href={`/`} className={`whitespace-pre text-[14px`}>
                   Home{" "}
@@ -87,6 +87,14 @@ const Footer = async () => {
                   className={`whitespace-pre text-[14px`}
                 >
                   Privacy policy{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/refund-policy`}
+                  className={`whitespace-pre text-[14px`}
+                >
+                  Refund policy{" "}
                 </Link>
               </li>
             </ul>
