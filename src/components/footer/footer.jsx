@@ -53,32 +53,19 @@ const Footer = async () => {
           <div className={`w-auto`}>
             <ul className="flex gap-x-[20px] lg:gap-x-[33px] gap-y-[10px] text-[14px   flex-wrap justify-center">
               <li>
-                <Link href={`/`} className={`whitespace-pre text-[14px`}>
-                  Home{" "}
+                <Link
+                  href={`/disclaimer`}
+                  className={`whitespace-pre text-[14px`}
+                >
+                  Disclaimer{" "}
                 </Link>
               </li>
               <li>
                 <Link
-                  href={`/about-us`}
+                  href={`/terms-of-services`}
                   className={`whitespace-pre text-[14px`}
                 >
-                  About Us{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/services`}
-                  className={`whitespace-pre text-[14px`}
-                >
-                  Services{" "}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/contact-us`}
-                  className={`whitespace-pre text-[14px`}
-                >
-                  Contact Us{" "}
+                  Terms of services{" "}
                 </Link>
               </li>
               <li>

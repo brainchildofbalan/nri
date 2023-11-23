@@ -97,7 +97,7 @@ const ContactUsPage = () => {
                       />
                     </div>
                     <p className={`text-center w-[90%] mx-auto`}>
-                      Planet Tower , Thomaspuram Church Road ,Marad ,Kochi 682304
+                      NRI's life,  Planet Tower , Thomaspuram Church Road ,Marad ,Kochi 682304
                     </p>
                   </a>
                 </div>
