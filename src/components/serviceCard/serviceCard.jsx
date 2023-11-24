@@ -48,9 +48,8 @@ const ServiceCard = ({
         )}
       </Link>
       <div
-        className={`w-full relative ${
-          !isBgGrey ? `border` : `bg-[#F5F5F5] bg-opacity-50 border-b`
-        } border-t-0 px-[20px] py-[11px] flex-1 flex flex-col`}
+        className={`w-full relative ${!isBgGrey ? `border` : `bg-[#F5F5F5] bg-opacity-50 border-b`
+          } border-t-0 px-[20px] py-[11px] flex-1 flex flex-col`}
       >
         <Link href={`/services/${url}`} className={`w-full`}>
           <h3 className={`text-[20px] mb-[5px] font-semibold text-[#0C999F]`}>
@@ -68,7 +67,7 @@ const ServiceCard = ({
           <h4 className={`text-[25px] mb-[5px] font-semibold`}>
             ₹{price}{" "}
             <span className={`text-[12px] opacity-60 font-normal`}>
-              Plus gst
+              Plus GST
             </span>
           </h4>
           <div className={`w-full flex justify-between items-center`}>

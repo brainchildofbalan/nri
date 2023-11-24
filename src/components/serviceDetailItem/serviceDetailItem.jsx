@@ -64,7 +64,7 @@ const ServiceDetailItem = ({
             <span
               className={`text-[11px] mt-[2px] opacity-60 font-normal whitespace-pre`}
             >
-              Plus gst
+              Plus GST
             </span>
           </p>
           <Button
