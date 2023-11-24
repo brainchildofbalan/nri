@@ -10,6 +10,24 @@ const ContactUsPage = () => {
   return (
     <div className={`w-full min-h-[100vh]`}>
       <BreadCrumbs title={`contact us`} />
+
+      <div className="w-full py-[10px] bg-[#0C999F]">
+        <div className="container mx-auto px-[15px]">
+          <div className="w-full relative max-w-[700px] flex justify-center mx-auto">
+            <div
+              className={` text-[14px] sm:text-[16px] w-full relative text-white  p-[3px] flex flex-wrap text-center justify-center`}
+            >
+              <h4>Opening Hours</h4>
+              <span className="px-[5px]">:</span>
+              <span className="px-[5px]">Monday - Friday</span>
+              <span className="font-semibold px-[5px]">10am to 6pm</span>
+              <span className="px-[10px]">|</span>
+              <span className="font-bold">Sunday closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className={`w-full relative py-[40px]`}>
         <div className={`container mx-auto px-[15px]`}>
           <div className={`relative flex flex-wrap`}>
@@ -31,7 +49,10 @@ const ContactUsPage = () => {
                 <div className={`w-auto flex invert mt-[30px]`}>
                   <ul className={`w-auto flex gap-[27px]`}>
                     <li>
-                      <a href="https://www.facebook.com/profile.php?id=61552625924781" target="_blank">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61552625924781"
+                        target="_blank"
+                      >
                         <div className={`w-[22px] h-[22px] mr-[5px]`}>
                           <img
                             src="/images/header/facebook.svg"
@@ -42,7 +63,10 @@ const ContactUsPage = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/@NRILifeChannel" target="_blank">
+                      <a
+                        href="https://www.youtube.com/@NRILifeChannel"
+                        target="_blank"
+                      >
                         <div className={`w-[24px] h-[24px] mr-[5px]`}>
                           <img
                             src="/images/header/youtube.svg"
@@ -71,9 +95,7 @@ const ContactUsPage = () => {
               >
                 <div className={`w-1/3 flex flex-col items-center`}>
                   <a href="/" className={`flex py-[30px] flex-col`}>
-                    <div
-                      className={`w-[22px] h-[22px] mx-auto mb-[20px]`}
-                    >
+                    <div className={`w-[22px] h-[22px] mx-auto mb-[20px]`}>
                       <img
                         src="/images/icons/email.svg"
                         className={`w-full h-full object-contain`}
@@ -87,9 +109,7 @@ const ContactUsPage = () => {
                   className={`w-1/3 flex flex-col items-center border-r border-l`}
                 >
                   <a href="/" className={`flex py-[30px] flex-col`}>
-                    <div
-                      className={`w-[22px] h-[22px] mx-auto mb-[20px]`}
-                    >
+                    <div className={`w-[22px] h-[22px] mx-auto mb-[20px]`}>
                       <img
                         src="/images/icons/location.svg"
                         className={`w-full h-full object-contain`}
@@ -97,15 +117,14 @@ const ContactUsPage = () => {
                       />
                     </div>
                     <p className={`text-center w-[90%] mx-auto`}>
-                      NRI's life,  Planet Tower , Thomaspuram Church Road ,Marad ,Kochi 682304
+                      NRI's life, Planet Tower , Thomaspuram Church Road ,Marad
+                      ,Kochi 682304
                     </p>
                   </a>
                 </div>
                 <div className={`w-1/3 flex flex-col items-center`}>
                   <div className={`flex py-[30px] flex-col`}>
-                    <div
-                      className={`w-[22px] h-[22px] mx-auto mb-[20px]`}
-                    >
+                    <div className={`w-[22px] h-[22px] mx-auto mb-[20px]`}>
                       <img
                         src="/images/icons/call.svg"
                         className={`w-full h-full object-contain`}
