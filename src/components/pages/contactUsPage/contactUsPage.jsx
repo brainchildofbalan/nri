@@ -19,7 +19,7 @@ const ContactUsPage = () => {
             >
               <h4>Opening Hours</h4>
               <span className="px-[5px]">:</span>
-              <span className="px-[5px]">Monday - Friday</span>
+              <span className="px-[5px]">Monday - Saturday</span>
               <span className="font-semibold px-[5px]">10am to 6pm</span>
               <span className="px-[10px]">|</span>
               <span className="font-bold">Sunday closed</span>
