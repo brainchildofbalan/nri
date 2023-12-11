@@ -12,10 +12,11 @@ export const useServiceDetails = () => {
     const { cartList: localCart } = useCartDetails()
     const router = useRouter();
     const handleBuyNow = (item) => {
-        const { category_id, price, category_name } = item;
+        const { category_id, price, category_name, category_postage } = item;
         const title = {
             category_id,
-            category_name
+            category_name,
+            category_postage
         }
         const isListExist = localCart || []
         // const isListExist = localCart ? localCart : cart

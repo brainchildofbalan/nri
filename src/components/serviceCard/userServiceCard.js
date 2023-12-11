@@ -13,10 +13,11 @@ export const userServiceCard = () => {
 
     const { addCart, cartList } = useAddCartLocal()
     const handleAddCart = (item) => {
-        const { category_id, price, category_name } = item;
+        const { category_id, price, category_name, category_postage } = item;
         const title = {
             category_id,
-            category_name
+            category_name,
+            category_postage
         }
         const isListExist = localCart || []
         // const isListExist = localCart ? localCart : cart

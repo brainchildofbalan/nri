@@ -11,11 +11,14 @@ const TAX_PERCENTAGE = 18;
 export const useCartDetails = () => {
     const [userData, setUserData] = useState([]);
     const [cartList, setCartList] = useState([]);
+    const [postageList, setPostageList] = useState([]);
+    const [hasPostage, setHasPostage] = useState(false);
     const [cartLogin, setCartLogin] = useState(false);
     const [totalAmountSub, setTotalAmountSub] = useState(0);
+    const [postageAmount, setPostageAmount] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
-    const totalAmount = Number(totalAmountSub) + Number(calculateValue(TAX_PERCENTAGE, totalAmountSub));
+    const totalAmount = Number(totalAmountSub) + Number(calculateValue(TAX_PERCENTAGE, totalAmountSub) + postageAmount);
     const { api } = useApi()
     const { formatDate } = useFormatDate()
     const [cart, setCart] = useRecoilState(cartState);
@@ -28,6 +31,7 @@ export const useCartDetails = () => {
         date_of_birth: Yup.string().required('Date of birth is required'),
         number: Yup.string().required('Mobile number is required'),
         address: Yup.string().required('Address is required'),
+        order_postage: hasPostage && Yup.string().required('Choose postage'),
     });
 
 
@@ -38,6 +42,7 @@ export const useCartDetails = () => {
         date_of_birth: userData?.date_of_birth || '',
         number: userData?.number || '',
         address: userData?.address || '',
+        order_postage: userData?.order_postage || '',
     };
 
     const handleSubmitFrom = (values, errors) => {
@@ -149,6 +154,35 @@ export const useCartDetails = () => {
         // setCart
     }
 
+    useEffect(() => {
+        api
+            .get(`/postage`,)
+            .then(function (response) {
+                setPostageList(response.data);
+
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+
+
+    }, []);
+
+
+    useEffect(() => {
+
+        const hasPostageLength = cart && cart.filter(item => item.title.category_postage === "true").length > 0
+        setHasPostage(hasPostageLength)
+
+    }, [cart]);
+
+
+    const handlePostage = (e) => {
+        setPostageAmount(Number(JSON.parse(e.target.value).price))
+    }
+
+
 
     return {
         cartList,
@@ -165,6 +199,10 @@ export const useCartDetails = () => {
         setUserData,
         clearCart,
         makePayment,
-        isLoading
+        isLoading,
+        hasPostage,
+        postageList,
+        handlePostage,
+        postageAmount
     }
 }

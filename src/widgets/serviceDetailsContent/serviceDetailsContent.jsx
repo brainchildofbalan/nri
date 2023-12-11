@@ -11,6 +11,7 @@ const ServiceDetailsContent = ({
   han,
   handleBuyNow,
   image,
+  category_postage
 }) => {
   const filteredData = more_services.filter(
     (item) => item.category_id !== category_id
@@ -22,6 +23,7 @@ const ServiceDetailsContent = ({
           <div className={`w-full lg:w-2/3   p-[10px]`}>
             <ServiceDetailItem
               category_name={category_name}
+              category_postage={category_postage}
               price={price}
               content={content}
               category_id={category_id}

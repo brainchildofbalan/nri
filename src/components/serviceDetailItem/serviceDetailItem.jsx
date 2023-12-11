@@ -10,6 +10,7 @@ const ServiceDetailItem = ({
   category_id,
   handleBuyNow,
   image,
+  category_postage
 }) => {
   return (
     <div className={`w-full relative flex flex-col lg:pr-[30px]`}>
@@ -65,12 +66,14 @@ const ServiceDetailItem = ({
               className={`text-[11px] mt-[2px] opacity-60 font-normal whitespace-pre`}
             >
               Plus GST
+              {category_postage}
             </span>
           </p>
+
           <Button
             text={`Buy now`}
             classNames={`!bg-[#ED781A] !w-full !md:w-auto`}
-            onclick={() => handleBuyNow({ category_name, price, category_id })}
+            onclick={() => handleBuyNow({ category_name, price, category_id, category_postage })}
           />
         </div>
 

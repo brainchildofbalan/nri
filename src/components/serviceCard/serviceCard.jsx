@@ -13,6 +13,7 @@ const ServiceCard = ({
   category_id,
   isBgGrey,
   image,
+  category_postage
 }) => {
   if (image) {
     console.log(
@@ -81,7 +82,7 @@ const ServiceCard = ({
               text={`Add to cart`}
               classNames={`!bg-[#ED781A] md:!px-[10px] md:!py-[8px]`}
               onclick={() =>
-                handleAddCart({ category_name, price, category_id })
+                handleAddCart({ category_name, price, category_id, category_postage })
               }
             />
           </div>

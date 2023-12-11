@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../button";
 import Link from "next/link";
 
-const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
+const BreadCrumbs = ({ title, price, category_id, handleBuyNow, category_postage }) => {
   return (
     <section
       className={`w-full relative min-h-[40px] md:min-h-[60px] mt-[118px] bg-[#F5F5F5] flex items-center border-b`}
@@ -39,7 +39,7 @@ const BreadCrumbs = ({ title, price, category_id, handleBuyNow }) => {
                     text={`Buy now`}
                     classNames={`!bg-[#ED781A]`}
                     onclick={() =>
-                      handleBuyNow({ category_name: title, price, category_id })
+                      handleBuyNow({ category_name: title, price, category_id, category_postage })
                     }
                   />
                 </>

@@ -14,6 +14,7 @@ const ServiceDetails = ({ data }) => {
         title={data[0].category_name}
         price={data[0].price}
         category_id={data[0].category_id}
+        category_postage={data[0].category_postage}
         handleBuyNow={handleBuyNow}
       />
       <ServiceDetailsContent {...data[0]} handleBuyNow={handleBuyNow} />
