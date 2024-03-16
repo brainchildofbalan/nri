@@ -9,10 +9,9 @@ const Intro = () => {
           <h1 className={`text-[24px] md:text-[30px] leading-none mb-[15px]`}>
             Why NRI life ?
           </h1>
-          <p className={`max-w-[540px] mx-auto text-center mb-[20px]`}>
-            With a deep understanding of the intricacies involved in
-            cross-border living, our mission is to illuminate the path, ensuring
-            that every step you take is effortless and free from all the hassle.
+          <p className={`max-w-[640px] mx-auto text-center mb-[20px]`}>
+            Do you have paperwork to finish back home? Is bureaucracy becoming a too complicated for you to handle from miles away? We’ll take the hassle of getting things done for you, efficiently, and effortlessly, while you can relax abroad.
+
           </p>
           <div
             className={`w-full md:w-auto flex flex-col md:flex-row gap-[10px]`}

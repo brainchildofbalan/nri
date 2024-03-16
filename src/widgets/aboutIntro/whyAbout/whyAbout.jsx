@@ -19,23 +19,19 @@ const WhyAbout = () => {
                 <p
                   className={`w-full text-[18px] text-white opacity-80 font-light`}
                 >
-                  Our team, including legal advisors, financial planners, and
-                  real estate professionals, excels in NRI matters, offering
-                  updated advice and solutions.
+                  Our team of professionals includes financial advisors, legal practitioners and real estate advisors. Every member of the team is well-informed and updated and specializes in handling NRI matters.
                 </p>
               </div>
             </div>
             <div className={`w-full sm:w-1/2 lg:w-1/4 px-[15px]`}>
               <div className={`w-full flex flex-col text-white`}>
                 <h3 className={`w-full text-[20px] text-white mb-[3px]`}>
-                  Customer-Centric
+                  Client-Driven
                 </h3>
                 <p
                   className={`w-full text-[18px] text-white opacity-80 font-light`}
                 >
-                  Your satisfaction is our top priority. We take the time to
-                  understand your unique needs and work tirelessly to meet and
-                  exceed your expectations.
+                  Your satisfaction comes first at NRI Life. All our solutions and advice will be tailor-made to your uniq ue requirements, and we’ll put in the time and effort so that you don’t have to.
                 </p>
               </div>
             </div>
@@ -48,9 +44,7 @@ const WhyAbout = () => {
                 <p
                   className={`w-full text-[18px] text-white opacity-80 font-light`}
                 >
-                  We believe in transparency in all our dealings. You can trust
-                  us to provide clear and honest information and guidance
-                  throughout our partnership.
+                  While our clients put their trust in us to get things done, we return the same by being transparent in all our proceedings. Honest information, clearly communicated with unbiased guidance, and you have our assurance on that.
                 </p>
               </div>
             </div>
@@ -63,9 +57,7 @@ const WhyAbout = () => {
                 <p
                   className={`w-full text-[18px] text-white opacity-80 font-light`}
                 >
-                  We leverage the latest technology to offer efficient and
-                  convenient services. Our online platforms make it easy for you
-                  to access information and stay updated.
+                  For your convenience, our online platform makes it simple and easy for you to stay updated constantly, and access information real-time, from the comfort of your homes. Fill out the easy form on our website, send us an email, or give us a call, and our team will get in touch with you immediately.
                 </p>
               </div>
             </div>
