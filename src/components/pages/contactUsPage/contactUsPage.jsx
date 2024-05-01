@@ -117,8 +117,7 @@ const ContactUsPage = () => {
                       />
                     </div>
                     <p className={`text-center w-[90%] mx-auto`}>
-                      NRI's life, Planet Tower , Thomaspuram Church Road ,Marad
-                      ,Kochi 682304
+                      GREYWHITE GROUP, 3/188 , Planet Tower, Kannadikkad Road, Maradu, Kochi - 682304
                     </p>
                   </a>
                 </div>

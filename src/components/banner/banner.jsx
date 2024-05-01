@@ -8,7 +8,7 @@ const Banner = () => {
     >
       <Image
         src={`/images/banner/banner-2.jpg`}
-        quality={100}
+        quality={99}
         fill
         alt={`banner`}
         className="object-cover object-[70%]"
