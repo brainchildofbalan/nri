@@ -65,24 +65,24 @@ const RefundPolicyPage = () => {
               <li>
                 If an order is canceled at the client's request, NRI's Life will
                 deduct 25% of the order value as a cancellation fee, and the
-                balance will be refunded. Any additional quote amount paid by
-                the client will be refunded after deducting costs already
-                incurred in executing the task.
+                balance will be refunded with in 14 days. Any additional quote
+                amount paid by the client will be refunded after deducting costs
+                already incurred in executing the task.
               </li>
               <li>
                 If an order couldn't be completed for reasons other than
-                client-requested cancellation, a refund will be issued after
-                deducting 25% of the order value plus costs already incurred in
-                executing the task. Situations leading to this could include
-                insufficient or delayed documentation/information from the
-                customer, errors/mistakes beyond NRI's Life's scope of work, the
-                customer's inability to follow procedures or requirements, or
-                any other reasons beyond NRI's Life's control.
+                client-requested cancellation, with in 14 days a refund will be
+                issued after deducting 25% of the order value plus costs already
+                incurred in executing the task. Situations leading to this could
+                include insufficient or delayed documentation/information from
+                the customer, errors/mistakes beyond NRI's Life's scope of work,
+                the customer's inability to follow procedures or requirements,
+                or any other reasons beyond NRI's Life's control.
               </li>
               <li>
                 If an order couldn't be fulfilled due to reasons attributed to
                 NRI's Life's performance on the task requirement, a full refund
-                will be provided.
+                will be provided with in 14 days.
               </li>
             </ul>
             <h3>Responsibility and Limitations:</h3>
