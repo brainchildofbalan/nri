@@ -61,9 +61,9 @@ export const useCartDetails = () => {
             .then(function (response) {
                 if (response?.data?.insertedId) {
                     //TODO payment functionality
-                    // makePayment({ productId: "nri_cart", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess, total: totalAmount, setIsLoading })
-                    clearCartSuccess();
-                    router.push('/success');
+                    makePayment({ productId: "nri_cart", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess, total: 2, setIsLoading })
+                    // clearCartSuccess();
+                    // router.push('/success');
 
                 }
                 else {

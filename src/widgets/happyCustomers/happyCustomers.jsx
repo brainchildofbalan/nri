@@ -17,7 +17,7 @@ const HappyCustomers = () => {
         <div className={`w-full flex justify-center mb-[35px]`}>
           <Title title={`Happy customers`} />
         </div>
-        <div className={`flex flex-wrap w-full`}>
+        <div className={`w-full`}>
           <Swiper
             spaceBetween={50}
             slidesPerView={1}

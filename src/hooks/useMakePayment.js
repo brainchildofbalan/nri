@@ -27,7 +27,7 @@ export const useMakePayment = () => {
 
         if (responseItem) {
             const options = {
-                key: 'rzp_test_DDAJ0jv2qAS430',
+                key: 'rzp_live_5nbks7U3JNEpVW',
                 amount: (total * 100).toString(), // amount in paise (100 paise = 1 INR)
                 currency: 'INR',
                 name: 'Your Company',

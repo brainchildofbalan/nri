@@ -13,12 +13,12 @@ const Menu = ({ setMenuOpen }) => {
     >
       <ul className={`flex gap-[33px] items-center `}>
         <li className={`h-[67px] flex items-center font-medium`}>
-          <Link href={`/`}>
+          <Link prefetch href={`/`}>
             <span>Home</span>
           </Link>
         </li>
         <li className={`h-[67px] flex items-center font-medium`}>
-          <Link href={`/about-us`}>
+          <Link prefetch href={`/about-us`}>
             <span>About Us</span>
           </Link>
         </li>
@@ -35,19 +35,19 @@ const Menu = ({ setMenuOpen }) => {
           </button>
         </li>
         <li className={`h-[67px] flex items-center font-medium`}>
-          <Link href={`/services`}>
+          <Link prefetch href={`/services`}>
             <span>Price and package</span>
           </Link>
         </li>
       </ul>
-      <Link href={`/contact-us`}>
+      <Link prefetch href={`/contact-us`}>
         <Button text={`Contact Us`} classNames={`text-[18px]`}>
           Contact Us
         </Button>
       </Link>
       <ul>
         <li className={`h-[67px] flex items-center font-medium`}>
-          <Link href={`/cart`} className="flex gap-[8px]">
+          <Link prefetch href={`/cart`} className="flex gap-[8px]">
             <span>{`Cart${
               cartValues && cartValues.length > 0
                 ? `(${cartValues.length})`
