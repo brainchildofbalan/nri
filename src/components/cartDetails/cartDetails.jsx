@@ -119,13 +119,6 @@ const CartDetails = () => {
                                   })}
                               </div>
 
-                              {/* /
-                    /
-                    /
-                    /
-                    /
-                    /
-                    / */}
 
                               {
                                 hasPostage &&

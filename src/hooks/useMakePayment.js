@@ -51,11 +51,24 @@ export const useMakePayment = () => {
                             console.log(error);
                         });
                 },
+                modal: {
+                    ondismiss: () => {
+                        // handle when modal close.
+                        // so we only make loading false.
+                        // if there is any standard in the future i will update.
+                        setIsLoading(false)
+                    }
+                },
             };
 
             const rzp = new window.Razorpay(options);
             rzp.open();
 
+
+            rzp.on("payment.failed", function (response) {
+                setIsLoading(false)
+                alert("Payment failed. Please try again. Contact support for help");
+            });
 
             rzp.on("payment.failed", function (response) {
                 setIsLoading(false)

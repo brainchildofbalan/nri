@@ -61,7 +61,8 @@ export const useCartDetails = () => {
             .then(function (response) {
                 if (response?.data?.insertedId) {
                     //TODO payment functionality
-                    makePayment({ productId: "nri_cart", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess, total: 2, setIsLoading })
+                    // totalAmount this is variable which i replaced
+                    makePayment({ productId: "nri_cart", invoice_id: response?.data?.insertedId, clearCart: clearCartSuccess, total: 100, setIsLoading })
                     // clearCartSuccess();
                     // router.push('/success');
 
