@@ -27,7 +27,7 @@ const Header = () => {
             <div className={`w-auto`}>
               <Link href={`/`} className={`xl:hidden`}>
                 <Image
-                  src="/images/header/logo.svg"
+                  src="/logo-new.png"
                   alt="nri's life logo"
                   priority
                   width={`150`}
@@ -65,14 +65,14 @@ const Header = () => {
             >
               <div
                 className={`${isHeaderHide ? `h-[67px] !w-[150px]` : `h-full w-[230px]`
-                  } transition-all duration-300 ease-in-out flex justify-end`}
+                  } transition-all duration-300 ease-in-out flex justify-end items-center`}
               >
                 <Link
                   href={`/`}
                   className={`w-full pointer-events-auto flex relative aspect-[220/56]`}
                 >
                   <Image
-                    src="/images/header/logo.svg"
+                    src="/logo-new.png"
                     alt="nri's life logo"
                     priority
                     fill

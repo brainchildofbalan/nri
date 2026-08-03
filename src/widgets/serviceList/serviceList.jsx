@@ -34,7 +34,7 @@ const ServiceList = ({ categorized }) => {
             >
               <div className={` flex overflow-x-auto mx-auto relative`}>
                 <div className={`w-auto relative mx-auto`}>
-                  <ul className={`bg-[#0eabb1] bg-opacity-80 flex `}>
+                  <ul className={`bg-gradient-to-r from-[#025B87] to-[#07C6BA] flex `}>
                     {categorized &&
                       categorized.map((item, index) => {
                         return (

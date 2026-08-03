@@ -91,7 +91,7 @@ const ContactUsPage = () => {
                 </div>
               </div>
               <div
-                className={`w-full relative border-t border-b hidden md:flex flex-wrap mt-[30px] max-w-[550px]`}
+                className={`w-full relative border-t border-b hidden md:flex flex-wrap mt-[30px] max-w-[650px]`}
               >
                 <div className={`w-1/3 flex flex-col items-center`}>
                   <a href="/" className={`flex py-[30px] flex-col`}>
@@ -108,7 +108,7 @@ const ContactUsPage = () => {
                 <div
                   className={`w-1/3 flex flex-col items-center border-r border-l`}
                 >
-                  <a href="/" className={`flex py-[30px] flex-col`}>
+                  <div className={`flex py-[30px] flex-col`}>
                     <div className={`w-[22px] h-[22px] mx-auto mb-[20px]`}>
                       <img
                         src="/images/icons/location.svg"
@@ -117,9 +117,13 @@ const ContactUsPage = () => {
                       />
                     </div>
                     <p className={`text-center w-[90%] mx-auto`}>
-                      GREYWHITE GROUP, 3/188 , Planet Tower, Kannadikkad Road, Maradu, Kochi - 682304
+                      167-169, 5th Floor, Great Portland Street, London, W1W 5PF
                     </p>
-                  </a>
+                    <p className={`text-center w-[90%] mx-auto mt-[10px]`}>
+                      <a href="tel:+447407165000">07407165000</a>,{" "}
+                      <a href="tel:+442036270470">02036270470</a>
+                    </p>
+                  </div>
                 </div>
                 <div className={`w-1/3 flex flex-col items-center`}>
                   <div className={`flex py-[30px] flex-col`}>
@@ -133,8 +137,7 @@ const ContactUsPage = () => {
                     <span>
                       {" "}
                       <a href="tel:+919645550072">+919645550072</a>,{" "}
-                      <a href="tel:+919645550073">73</a>,{" "}
-                      <a href="tel:+919645550074">74</a>
+                      <a href="tel:+919645550073">73</a>
                     </span>
                   </div>
                 </div>

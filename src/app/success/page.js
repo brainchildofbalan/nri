@@ -88,8 +88,7 @@ const success = async ({ searchParams }) => {
               <a href="mailto:">info@nrilife.com</a>{" "}
               <span className="px-[10px]">|</span>
               <a href="tel:+919645550072">+919645550072</a>,
-              <a href="tel:+919645550073">73</a>,
-              <a href="tel:+919645550074">74</a>
+              <a href="tel:+919645550073">73</a>
             </div>
 
             <div className={`w-full relative flex justify-center mt-[14px]`}>
