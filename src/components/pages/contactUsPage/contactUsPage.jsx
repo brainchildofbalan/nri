@@ -11,7 +11,7 @@ const ContactUsPage = () => {
     <div className={`w-full min-h-[100vh]`}>
       <BreadCrumbs title={`contact us`} />
 
-      <div className="w-full py-[10px] bg-[#0C999F]">
+      <div className="w-full py-[10px] bg-gradient-to-r from-[#025B87] to-[#07C6BA]">
         <div className="container mx-auto px-[15px]">
           <div className="w-full relative max-w-[700px] flex justify-center mx-auto">
             <div

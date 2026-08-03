@@ -157,7 +157,7 @@ nominee names which I had no clue. Thank you Team NRI Life.`}
         className={`w-[125px] mt-[50px] p-[13px] rounded-[40px] bg-[#E6F1F2] mx-auto flex justify-between`}
       >
         <button
-          className={`w-[45px] h-[45px] rounded-full bg-[#0eabb1] flex justify-center items-center rotate-180`}
+          className={`w-[45px] h-[45px] rounded-full bg-gradient-to-r from-[#025B87] to-[#07C6BA] flex justify-center items-center rotate-180`}
           // onClick={() => swipe.slidePrev()}
           ref={navigationPrevRef}
         >
@@ -177,7 +177,7 @@ nominee names which I had no clue. Thank you Team NRI Life.`}
           </svg>
         </button>
         <button
-          className={`w-[45px] h-[45px] rounded-full bg-[#0eabb1] flex justify-center items-center`}
+          className={`w-[45px] h-[45px] rounded-full bg-gradient-to-r from-[#025B87] to-[#07C6BA] flex justify-center items-center`}
           // onClick={() => swipe.slideNext()}
           ref={navigationNextRef}
         >
