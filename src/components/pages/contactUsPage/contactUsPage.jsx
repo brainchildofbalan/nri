@@ -91,11 +91,14 @@ const ContactUsPage = () => {
                 </div>
               </div>
               <div
-                className={`w-full relative border-t border-b hidden md:flex flex-wrap mt-[30px] max-w-[650px]`}
+                className={`w-full relative border-t border-b flex flex-wrap mt-[30px] max-w-[650px]`}
               >
-                <div className={`w-1/3 flex flex-col items-center`}>
-                  <a href="/" className={`flex py-[30px] flex-col`}>
-                    <div className={`w-[22px] h-[22px] mx-auto mb-[20px]`}>
+                <div className={`w-full flex justify-center border-b`}>
+                  <a
+                    href="mailto:info@nrilife.com"
+                    className={`flex items-center py-[20px]`}
+                  >
+                    <div className={`w-[22px] h-[22px] mr-[10px]`}>
                       <img
                         src="/images/icons/email.svg"
                         className={`w-full h-full object-contain`}
@@ -106,38 +109,58 @@ const ContactUsPage = () => {
                   </a>
                 </div>
                 <div
-                  className={`w-1/3 flex flex-col items-center border-r border-l`}
+                  className={`w-full sm:w-1/2 flex flex-col items-center py-[25px] px-[15px] border-b sm:border-b-0 sm:border-r`}
                 >
-                  <div className={`flex py-[30px] flex-col`}>
-                    <div className={`w-[22px] h-[22px] mx-auto mb-[20px]`}>
-                      <img
-                        src="/images/icons/location.svg"
-                        className={`w-full h-full object-contain`}
-                        alt=""
-                      />
-                    </div>
-                    <p className={`text-center w-[90%] mx-auto`}>
-                      167-169, 5th Floor, Great Portland Street, London, W1W 5PF
-                    </p>
-                    <p className={`text-center w-[90%] mx-auto mt-[10px]`}>
-                      <a href="tel:+447407165000">07407165000</a>,{" "}
-                      <a href="tel:+442036270470">02036270470</a>
-                    </p>
+                  <div className={`w-[22px] h-[22px] mb-[15px]`}>
+                    <img
+                      src="/images/icons/location.svg"
+                      className={`w-full h-full object-contain`}
+                      alt=""
+                    />
                   </div>
-                </div>
-                <div className={`w-1/3 flex flex-col items-center`}>
-                  <div className={`flex py-[30px] flex-col`}>
-                    <div className={`w-[22px] h-[22px] mx-auto mb-[20px]`}>
+                  <h4 className={`font-semibold mb-[8px]`}>India Office</h4>
+                  <p className={`text-center`}>
+                    3/187 Thomaspuram Church Road, Marad, Kochi, Kerala 682 304
+                  </p>
+                  <div className={`flex items-center mt-[12px]`}>
+                    <div className={`w-[16px] h-[16px] mr-[8px] shrink-0`}>
                       <img
                         src="/images/icons/call.svg"
                         className={`w-full h-full object-contain`}
                         alt=""
                       />
                     </div>
-                    <span>
-                      {" "}
+                    <span className={`text-center`}>
                       <a href="tel:+919645550072">+919645550072</a>,{" "}
-                      <a href="tel:+919645550073">73</a>
+                      <a href="tel:+919645550073">+919645550073</a>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className={`w-full sm:w-1/2 flex flex-col items-center py-[25px] px-[15px]`}
+                >
+                  <div className={`w-[22px] h-[22px] mb-[15px]`}>
+                    <img
+                      src="/images/icons/location.svg"
+                      className={`w-full h-full object-contain`}
+                      alt=""
+                    />
+                  </div>
+                  <h4 className={`font-semibold mb-[8px]`}>UK Office</h4>
+                  <p className={`text-center`}>
+                    167-169, 5th Floor, Great Portland Street, London, W1W 5PF
+                  </p>
+                  <div className={`flex items-center mt-[12px]`}>
+                    <div className={`w-[16px] h-[16px] mr-[8px] shrink-0`}>
+                      <img
+                        src="/images/icons/call.svg"
+                        className={`w-full h-full object-contain`}
+                        alt=""
+                      />
+                    </div>
+                    <span className={`text-center`}>
+                      <a href="tel:+447407165000">+447407165000</a>,{" "}
+                      <a href="tel:+442036270470">+442036270470</a>
                     </span>
                   </div>
                 </div>
@@ -221,7 +244,7 @@ const ContactUsPage = () => {
                         </div>
                         <div className={`w-full p-[10px]`}>
                           <textarea
-                            className={`w-full border border-[#C7C7C7] p-[18px] placeholder:text-black text-[18px] focus-visible:outline-none focus-visible:shadow-none focus:border-[#000000] resize-none`}
+                            className={`w-full border border-[#C7C7C7] p-[18px] placeholder:text-black text-[18px] focus-visible:outline-none focus-visible:shadow-none focus:border-[#000000] resize-none min-h-[11.75rem]`}
                             placeholder="Enter message"
                             type="text"
                             rows={4}
