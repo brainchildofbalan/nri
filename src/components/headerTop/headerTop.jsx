@@ -7,7 +7,7 @@ const HeaderTop = () => {
     >
       <div className={`container px-[15px] mx-auto flex items-center`}>
         <div className={`w-auto ml-auto mr-auto md:mr-0 flex items-center`}>
-          <div className={`w-[18px] h-[18px] mr-[10px]`}>
+          <div className={`w-[18px] h-[18px] mr-[8px] md:mr-[10px] shrink-0`}>
             <img
               src="/images/header/headset.svg"
               alt=""
@@ -15,12 +15,33 @@ const HeaderTop = () => {
             />
           </div>
           <div
-            className={`w-auto flex items-center text-[15px] md:text-[18px]`}
+            className={`w-auto flex items-center whitespace-nowrap text-[13px] sm:text-[15px] md:text-[18px]`}
           >
-            <a href="tel:+919645550072">+919645550072</a>,
-            <a href="tel:+919645550073">73</a>
-            <span className={`w-[1px] inline-block ml-[8px] mr-[12px]`}>|</span>
-            <a href="mailto:info@nrilife.com">info@nrilife.com</a>
+            <span className={`flex items-center`}>
+              <span className={`mr-[5px] opacity-80`}>IN</span>
+              <a href="tel:+919645550072">+919645550072</a>
+              <span className={`hidden sm:inline`}>
+                ,<a href="tel:+919645550073">73</a>
+              </span>
+            </span>
+            <span className={`inline-block mx-[8px] md:mx-[12px] opacity-60`}>
+              |
+            </span>
+            <span className={`flex items-center`}>
+              <span className={`mr-[5px] opacity-80`}>UK</span>
+              <a href="tel:+447407165000">+447407165000</a>
+            </span>
+            <span
+              className={`hidden sm:inline-block mx-[8px] md:mx-[12px] opacity-60`}
+            >
+              |
+            </span>
+            <a
+              href="mailto:support@nrilife.com"
+              className={`hidden sm:inline-block`}
+            >
+              support@nrilife.com
+            </a>
           </div>
         </div>
         <span

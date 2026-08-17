@@ -85,7 +85,7 @@ const success = async ({ searchParams }) => {
               gather further details necessary for the completion of your order.
             </p>
             <div className={`w-full relative flex justify-center`}>
-              <a href="mailto:">info@nrilife.com</a>{" "}
+              <a href="mailto:support@nrilife.com">support@nrilife.com</a>{" "}
               <span className="px-[10px]">|</span>
               <a href="tel:+919645550072">+919645550072</a>,
               <a href="tel:+919645550073">73</a>

@@ -116,7 +116,7 @@ const RefundPolicyPage = () => {
               Should you encounter any issues with our
               Satisfaction-or-Money-Back Guarantee & Refund Policy or experience
               delays with your cancellation request, feel free to reach out to
-              us at <a href="mailto:info@nrilife.com">info@nrilife.com</a>
+              us at <a href="mailto:support@nrilife.com">support@nrilife.com</a>
             </p>
           </div>
         </div>

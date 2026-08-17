@@ -95,7 +95,7 @@ const ContactUsPage = () => {
               >
                 <div className={`w-full flex justify-center border-b`}>
                   <a
-                    href="mailto:info@nrilife.com"
+                    href="mailto:support@nrilife.com"
                     className={`flex items-center py-[20px]`}
                   >
                     <div className={`w-[22px] h-[22px] mr-[10px]`}>
@@ -105,11 +105,11 @@ const ContactUsPage = () => {
                         alt=""
                       />
                     </div>
-                    <p>info@nrilife.com</p>
+                    <p>support@nrilife.com</p>
                   </a>
                 </div>
                 <div
-                  className={`w-full sm:w-1/2 flex flex-col items-center py-[25px] px-[15px] border-b sm:border-b-0 sm:border-r`}
+                  className={`w-full sm:w-1/2 flex flex-col items-center text-center py-[25px] px-[15px] border-b sm:border-b-0 sm:border-r`}
                 >
                   <div className={`w-[22px] h-[22px] mb-[15px]`}>
                     <img
@@ -119,10 +119,11 @@ const ContactUsPage = () => {
                     />
                   </div>
                   <h4 className={`font-semibold mb-[8px]`}>India Office</h4>
-                  <p className={`text-center`}>
-                    3/187 Thomaspuram Church Road, Marad, Kochi, Kerala 682 304
+                  <p>
+                    Planet Tower, 3/187 Thomaspuram Church Road, Marad, Kochi,
+                    Kerala 682 304
                   </p>
-                  <div className={`flex items-center mt-[12px]`}>
+                  <div className={`flex items-center justify-center mt-auto pt-[15px]`}>
                     <div className={`w-[16px] h-[16px] mr-[8px] shrink-0`}>
                       <img
                         src="/images/icons/call.svg"
@@ -130,14 +131,14 @@ const ContactUsPage = () => {
                         alt=""
                       />
                     </div>
-                    <span className={`text-center`}>
-                      <a href="tel:+919645550072">+919645550072</a>,{" "}
+                    <span className={`flex flex-col items-start`}>
+                      <a href="tel:+919645550072">+919645550072</a>
                       <a href="tel:+919645550073">+919645550073</a>
                     </span>
                   </div>
                 </div>
                 <div
-                  className={`w-full sm:w-1/2 flex flex-col items-center py-[25px] px-[15px]`}
+                  className={`w-full sm:w-1/2 flex flex-col items-center text-center py-[25px] px-[15px]`}
                 >
                   <div className={`w-[22px] h-[22px] mb-[15px]`}>
                     <img
@@ -147,10 +148,10 @@ const ContactUsPage = () => {
                     />
                   </div>
                   <h4 className={`font-semibold mb-[8px]`}>UK Office</h4>
-                  <p className={`text-center`}>
+                  <p>
                     167-169, 5th Floor, Great Portland Street, London, W1W 5PF
                   </p>
-                  <div className={`flex items-center mt-[12px]`}>
+                  <div className={`flex items-center justify-center mt-auto pt-[15px]`}>
                     <div className={`w-[16px] h-[16px] mr-[8px] shrink-0`}>
                       <img
                         src="/images/icons/call.svg"
@@ -158,8 +159,8 @@ const ContactUsPage = () => {
                         alt=""
                       />
                     </div>
-                    <span className={`text-center`}>
-                      <a href="tel:+447407165000">+447407165000</a>,{" "}
+                    <span className={`flex flex-col items-start`}>
+                      <a href="tel:+447407165000">+447407165000</a>
                       <a href="tel:+442036270470">+442036270470</a>
                     </span>
                   </div>
@@ -173,7 +174,7 @@ const ContactUsPage = () => {
                     {" "}
                     If you prefer not to fill out the form, please use this{" "}
                     <a
-                      href="mailto:info@nrilife.com"
+                      href="mailto:support@nrilife.com"
                       className={`underline text-[#1501FF]`}
                     >
                       link
